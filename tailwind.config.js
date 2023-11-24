@@ -1,7 +1,6 @@
 module.exports = {
   theme: {
     extend: {
-
       colors: {
         primary: '#262E49',
         primaryHover:'#222942',
@@ -10,9 +9,10 @@ module.exports = {
         DPPLightHover: '#edf7f0',
         DPPLightActive: '#d9efdf',
         DPPNormal:'#84cb98',
-
-
-
+      },
+      screens:{
+        'xs':'475px',
+        '2xs': '320px'
       }
     }
   }

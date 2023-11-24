@@ -2,7 +2,7 @@
 // https://www.figma.com/file/Caoi6yMxwbeKMneS5tsCt6/2020%E7%B8%BD%E7%B5%B1%E9%81%B8%E8%88%89%E5%8D%B3%E6%99%82%E9%96%8B%E7%A5%A8%E5%9C%B0%E5%9C%96?node-id=66%3A3067&mode=dev
 
 // Todo：
-// - 圓餅圖
+// - 圓餅圖 RWD
 // - 資料串接
 // - 地圖連結
 // - 下拉選單
@@ -58,8 +58,8 @@
 
     <div class=" lg:container mx-auto pb-10 lg:flex ">
         <!-- 投票概況 -->
-      <div class="container lg:w-auto mx-auto lg:mx-0 px-6 grow-0">
-        <div class="bg-white px-5 py-3 rounded-xl lg:inline-block">
+      <div class="container lg:w-auto mx-auto lg:mx-0 sm:px-6 grow-0">
+        <div class="bg-white px-5 py-3 sm:rounded-xl lg:inline-block">
           <button @click="toggleResult" class="w-full flex justify-between items-center text-lg lg:text-xl font-bold lg:cursor-default">
             <span>投票概況</span>
             <span class="lg:hidden duration-200 text-xl" :class="{'rotate-90':openResult}">
@@ -67,9 +67,9 @@
             </span>
           </button>
           <div class="duration-200 overflow-hidden" :class="{'h-0 lg:h-auto':!openResult}">
-            <div  class="block sm:flex lg:block items-center mt-5"> 
+            <div  class="block xs:flex lg:block items-center mt-5"> 
               <div class="flex items-center">
-                <div class="mr-3">
+                <div class="mr-3 mb-5">
                   <ClientOnly>
                     <voteRateDonut />
                     <!-- <Echart /> -->
@@ -92,7 +92,7 @@
                 </li>
               </ul>
             </div>
-            <div  class="block sm:flex lg:block items-center mt-5">
+            <div  class="xs:flex lg:block items-center mt-5">
               <ClientOnly>
                 <!-- <voteShareChart /> -->
                 <voteShareDonut />
