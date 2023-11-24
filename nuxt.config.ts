@@ -6,5 +6,7 @@ export default defineNuxtConfig({
     'nuxt-swiper',
     'nuxt-icon'
   ],
-
+  build: {
+    transpile: [/echarts/],
+  }
 })

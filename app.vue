@@ -1,5 +1,14 @@
 <script setup>
 // https://www.figma.com/file/Caoi6yMxwbeKMneS5tsCt6/2020%E7%B8%BD%E7%B5%B1%E9%81%B8%E8%88%89%E5%8D%B3%E6%99%82%E9%96%8B%E7%A5%A8%E5%9C%B0%E5%9C%96?node-id=66%3A3067&mode=dev
+
+// Todo：
+// - 圓餅圖
+// - 資料串接
+// - 地圖連結
+// - 下拉選單
+// - 
+
+
   const openResult = ref(false)
   const toggleResult = () => {
     openResult.value = !openResult.value
@@ -62,7 +71,8 @@
               <div class="flex items-center">
                 <div class="mr-3">
                   <ClientOnly>
-                    <voteRateChart />
+                    <voteRateDonut />
+                    <!-- <Echart /> -->
                   </ClientOnly>
                 </div>
                 <div class="text-center mr-3">
@@ -84,7 +94,8 @@
             </div>
             <div  class="block sm:flex lg:block items-center mt-5">
               <ClientOnly>
-                <voteShareChart />
+                <!-- <voteShareChart /> -->
+                <voteShareDonut />
               </ClientOnly>
               <ResultTable class="ms-3 lg:ms-0 whitespace-nowrap" />
             </div>
