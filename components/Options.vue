@@ -2,15 +2,9 @@
 import { useAreaStore } from '@/stores/selectArea'
 const areaStore = useAreaStore()
 
-// import data from '@/db.json/'
-
 const county_select = ref(null)
 const district_select = ref(null)
 const village_select = ref(null)
-
-
-// areaStore.countiesList = ref(Object.values(data['2020'].counties))
-
 
 </script>
 <template>

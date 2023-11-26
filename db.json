@@ -5,34 +5,34 @@
         "no": 1,
         "party": "PFP",
         "president": "宋楚瑜",
-        "vice-president": ""
+        "vicePresident": "余湘"
       },
       {
         "no": 2,
         "party": "KMT",
-        "president": "",
-        "vice-president": ""
+        "president": "韓國瑜",
+        "vicePresident": "張善政"
       },
       {
         "no": 3,
         "party": "DPP",
         "president": "蔡英文",
-        "vice-president": ""
+        "vicePresident": "賴清德"
       }
     ],
-    "national_total": [163631, 608590, 5522119, 8170231],
+    "national_total": [{"no":0,"votes":163631},{"no":1,"votes":608590},{"no":2,"votes":5522119},{"no":3,"votes":8170231}],
     "counties": {
       "taipei":{
         "id": "taipei",
         "name": "台北市",
         "name_en":"Taipei City",
-        "county_total": [21381, 70769, 685830, 875854],
+        "county_total": [{"no":0,"votes":21381},{"no":1,"votes":70769},{"no":2,"votes":685830},{"no":3,"votes":875854}],
         "districts": {
           "松山區": {
             "name":"松山區",
-            "district_total": [1762, 5436, 55918, 64207],
+            "district_total": [{"no":0,"votes":1762},{"no":1,"votes":5436},{"no":2,"votes":55918},{"no":3,"votes":64207}],
             "villages": {
-              "莊敬里": {"name":"莊敬里","village_total":[62, 173, 1555, 1718]},
+              "莊敬里":{"name":"莊敬里","village_total":[{"no":0,"votes":62},{"no":1,"votes":173},{"no":2,"votes":1555},{"no":3,"votes":1718}]},
               "東榮里":{"name":"東榮里", "village_total":[73, 174, 2173, 2660]},
               "三民里":{"name":"三民里", "village_total":[65, 192, 2010, 2175]},
               "新益里":{"name":"新益里", "village_total":[45, 133, 1257, 1686]},

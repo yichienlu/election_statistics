@@ -13,7 +13,7 @@ const areaStore = useAreaStore()
 
 import data from '@/db.json/'
 areaStore.data = data
-console.log(data)
+// console.log(data)
   areaStore.countiesList = ref(Object.values(data['2020'].counties))
 
   const openResult = ref(false)
@@ -34,6 +34,13 @@ console.log(data)
       920: {slidesPerView: 3.1}
     }   
   })
+
+  const clearSelection = () => {
+    console.log("click!")
+    areaStore.selectedCounty = ''
+    areaStore.selectedDistrict = ''
+    areaStore.selectedVillage = ''
+  }
 </script>
 <template>
   <div class="bg-[#F5F5F5] min-h-[100vh]">
@@ -49,7 +56,7 @@ console.log(data)
       <div class="grow grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-2">
         <Options />
       </div>
-      <button class="block w-9 sm:w-auto h-[76px] sm:h-9 rounded-lg text-2xl sm:text-base bg-primary hover:bg-primaryHover active:bg-primaryActive text-white py-1 sm:px-3 ml-2">
+      <button class="block w-9 sm:w-auto h-[76px] sm:h-9 rounded-lg text-2xl sm:text-base bg-primary hover:bg-primaryHover active:bg-primaryActive text-white py-1 sm:px-3 ml-2" @click="clearSelection">
         <span class="hidden sm:inline">清除</span>
         <Icon name="tabler:reload" />
       </button>
@@ -96,7 +103,7 @@ console.log(data)
                 <!-- <voteShareChart /> -->
                 <voteShareDonut />
               </ClientOnly>
-              <ResultTable class="ms-3 lg:ms-0 whitespace-nowrap" />
+              <ResultTableNational class="ms-3 lg:ms-0 whitespace-nowrap" />
             </div>
           </div>
         </div>
@@ -119,19 +126,19 @@ console.log(data)
         <SwiperSlide v-if="areaStore.selectedCounty" class="bg-blue-400" >
           <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg  whitespace-nowrap">
             <h3 class="font-bold text-xl mb-3"></h3>
-            <ResultTable />
+            <ResultTableCounty />
           </div>
         </SwiperSlide>
         <SwiperSlide  v-if="areaStore.selectedDistrict">
           <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg w-auto  whitespace-nowrap">
             <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedDistrict }}</h3>
-            <ResultTable />
+            <ResultTableDistrict />
           </div>
         </SwiperSlide>
         <SwiperSlide v-if="areaStore.selectedVillage">
           <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg w-auto  whitespace-nowrap">
             <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedVillage }}</h3>
-            <ResultTable />
+            <ResultTableVillage />
           </div>
         </SwiperSlide>
       </Swiper>
@@ -139,15 +146,15 @@ console.log(data)
       <div class="hidden container mx-auto lg:mx-0 lg:w-auto px-6 ms-5 lg:block">
         <div v-if="areaStore.selectedCounty" class="px-5 py-3 border-2 border-purple-400 bg-purple-50 rounded-lg w-auto  whitespace-nowrap mb-5">
           <h3 class="font-bold text-xl mb-3">{{ data['2020'].counties[areaStore.selectedCounty].name }}</h3>
-          <ResultTable />
+          <ResultTableCounty />
         </div>
         <div v-if="areaStore.selectedDistrict" class="px-5 py-3 border-2 border-orange-500 bg-orange-50 rounded-lg mb-5">
           <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedDistrict }}</h3>
-          <ResultTable />
+          <ResultTableDistrict />
         </div>
         <div v-if="areaStore.selectedVillage" class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg">
           <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedVillage }}</h3>
-          <ResultTable />
+          <ResultTableVillage />
         </div>
       </div>
 

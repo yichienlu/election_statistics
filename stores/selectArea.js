@@ -1,7 +1,5 @@
 export const useAreaStore = defineStore('area', ()=>{
-  // import data from "@/db.json/"
-  
-  // let countiesList = ref(Object.values(data['2020'].counties))
+
   const data = ref({})
   let countiesList = ref([])
   let districtsList = ref([])
@@ -16,7 +14,6 @@ export const useAreaStore = defineStore('area', ()=>{
     selectedCounty.value = data.value['2020'].counties[e.target.value].id
   
     districtsList.value = Object.values(data.value['2020'].counties[e.target.value].districts)
-    console.log(selectedCounty.value)
   }
   const selectDistrict = (e) => {
     villagesList.value = Object.values(data.value['2020'].counties[selectedCounty.value].districts[e.target.value].villages)
