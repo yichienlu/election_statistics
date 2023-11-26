@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-swiper',
-    'nuxt-icon'
+    'nuxt-icon',
+    '@pinia/nuxt'
   ],
   build: {
     transpile: [/echarts/],

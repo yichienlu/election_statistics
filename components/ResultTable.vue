@@ -1,3 +1,8 @@
+<script setup>
+import { useAreaStore } from '@/stores/selectArea'
+const areaStore = useAreaStore()
+
+</script>
 <template>
   <div>
     <table style="width:100%">

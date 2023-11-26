@@ -8,6 +8,13 @@
 // - 下拉選單
 // - 
 
+import { useAreaStore } from '@/stores/selectArea'
+const areaStore = useAreaStore()
+
+import data from '@/db.json/'
+areaStore.data = data
+console.log(data)
+  areaStore.countiesList = ref(Object.values(data['2020'].counties))
 
   const openResult = ref(false)
   const toggleResult = () => {
@@ -31,7 +38,7 @@
 <template>
   <div class="bg-[#F5F5F5] min-h-[100vh]">
     <h1 class="bg-primary text-white">
-      <div class="container mx-auto px-6 pt-7 pb-4 sm:pt-4 text-xl sm:text-3xl font-bold">2020 開票地圖</div>
+      <div class="container mx-auto px-6 pt-7 pb-4 sm:pt-4 text-xl sm:text-3xl font-bold">2020 開票地圖 {{ areaStore.selectedCounty }}</div>
     </h1>
 
     <div class="container mx-auto px-6 flex gap-5 pt-5 sm:pt-8 mb-5 font-bold sm:text-xl overflow-hidden">
@@ -40,15 +47,7 @@
     </div> 
     <div class="container mx-auto px-6 flex mb-5 sm:mb-10">
       <div class="grow grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-2">
-        <select name="" id="" class="col-span-2 sm:col-span-1 rounded-lg border border-[#E6E6E6] px-3 py-1">
-          <option value="">請選擇縣市</option>
-        </select>
-        <select name="" id="" class="rounded-lg border border-[#E6E6E6] px-3 py-1">
-          <option value="">請選擇鄉鎮</option>
-        </select>
-        <select name="" id="" class="rounded-lg border border-[#E6E6E6] px-3 py-1">
-          <option value="">請選擇村里</option>
-        </select>
+        <Options />
       </div>
       <button class="block w-9 sm:w-auto h-[76px] sm:h-9 rounded-lg text-2xl sm:text-base bg-primary hover:bg-primaryHover active:bg-primaryActive text-white py-1 sm:px-3 ml-2">
         <span class="hidden sm:inline">清除</span>
@@ -117,39 +116,39 @@
       >
       <!-- freemode 沒有作用??? -->
 
-        <SwiperSlide class="bg-blue-400" >
+        <SwiperSlide v-if="areaStore.selectedCounty" class="bg-blue-400" >
           <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg  whitespace-nowrap">
-            <h3 class="font-bold text-xl mb-3">ＸＸ市</h3>
+            <h3 class="font-bold text-xl mb-3"></h3>
             <ResultTable />
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide  v-if="areaStore.selectedDistrict">
           <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg w-auto  whitespace-nowrap">
-            <h3 class="font-bold text-xl mb-3">ＸＸ區</h3>
+            <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedDistrict }}</h3>
             <ResultTable />
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide v-if="areaStore.selectedVillage">
           <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg w-auto  whitespace-nowrap">
-            <h3 class="font-bold text-xl mb-3">ＸＸ里</h3>
+            <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedVillage }}</h3>
             <ResultTable />
           </div>
         </SwiperSlide>
       </Swiper>
     </div>
       <div class="hidden container mx-auto lg:mx-0 lg:w-auto px-6 ms-5 lg:block">
-        <div class="px-5 py-3 border-2 border-purple-400 bg-purple-50 rounded-lg w-auto  whitespace-nowrap mb-5">
-            <h3 class="font-bold text-xl mb-3">ＸＸ市</h3>
-            <ResultTable />
-          </div>
-          <div class="px-5 py-3 border-2 border-orange-500 bg-orange-50 rounded-lg mb-5">
-            <h3 class="font-bold text-xl mb-3">ＸＸ區</h3>
-            <ResultTable />
-          </div>
-          <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg">
-            <h3 class="font-bold text-xl mb-3">ＸＸ里</h3>
-            <ResultTable />
-          </div>
+        <div v-if="areaStore.selectedCounty" class="px-5 py-3 border-2 border-purple-400 bg-purple-50 rounded-lg w-auto  whitespace-nowrap mb-5">
+          <h3 class="font-bold text-xl mb-3">{{ data['2020'].counties[areaStore.selectedCounty].name }}</h3>
+          <ResultTable />
+        </div>
+        <div v-if="areaStore.selectedDistrict" class="px-5 py-3 border-2 border-orange-500 bg-orange-50 rounded-lg mb-5">
+          <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedDistrict }}</h3>
+          <ResultTable />
+        </div>
+        <div v-if="areaStore.selectedVillage" class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg">
+          <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedVillage }}</h3>
+          <ResultTable />
+        </div>
       </div>
 
     </div>
