@@ -2,11 +2,11 @@
 // https://www.figma.com/file/Caoi6yMxwbeKMneS5tsCt6/2020%E7%B8%BD%E7%B5%B1%E9%81%B8%E8%88%89%E5%8D%B3%E6%99%82%E9%96%8B%E7%A5%A8%E5%9C%B0%E5%9C%96?node-id=66%3A3067&mode=dev
 
 // Todo：
-// - 圓餅圖 RWD
-// - 資料串接
-// - 地圖連結
-// - 下拉選單
-// - 
+// - 圓餅圖 data
+// - 選單樣式
+// - 地圖顏色
+// - result color
+// - map select options
 
 import { useAreaStore } from '@/stores/selectArea'
 const areaStore = useAreaStore()
@@ -52,7 +52,7 @@ areaStore.data = data
       <button class=" py-3 border-b-4 border-primary whitespace-nowrap">第15任 總統副總統大選</button>
       <button class=" py-3 text-[#BFBFBF] whitespace-nowrap">第10任 立法委員選舉</button>
     </div> 
-    <div class="container mx-auto px-6 flex mb-5 sm:mb-10">
+    <div class="sticky top-6 lg:relative container mx-auto px-6 flex mb-5 sm:mb-10">
       <div class="grow grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-2">
         <Options />
       </div>
@@ -62,7 +62,7 @@ areaStore.data = data
       </button>
     </div>
 
-    <div class=" lg:container mx-auto pb-10 lg:flex ">
+    <div class="lg:container mx-auto pb-10 lg:flex ">
         <!-- 投票概況 -->
       <div class="container lg:w-auto mx-auto lg:mx-0 sm:px-6 grow-0">
         <div class="bg-white px-5 py-3 sm:rounded-xl lg:inline-block">
@@ -78,23 +78,22 @@ areaStore.data = data
                 <div class="mr-3 mb-5">
                   <ClientOnly>
                     <voteRateDonut />
-                    <!-- <Echart /> -->
                   </ClientOnly>
                 </div>
                 <div class="text-center mr-3">
-                  <div class="font-bold">74.9%</div>
+                  <div class="font-bold">{{areaStore.data['2020'].vote_rate.toFixed(2)}}%</div>
                   <div class="text-[12px]">投票率</div>
                 </div>
               </div>
               <ul>
                 <li class="mb-2">投票數
-                  <span class="font-bold ms-2">14,464,571 票</span>
+                  <span class="font-bold ms-2">{{ areaStore.data['2020'].votes_valid }} 票</span>
                 </li>
                 <li class="mb-2">無效票數
-                  <span class="font-bold ms-2">163,631 票</span>
+                  <span class="font-bold ms-2">{{ areaStore.data['2020'].votes_invalid }} 票</span>
                 </li>
                 <li>有效票數
-                  <span class="font-bold ms-2">14,300,940 票</span>
+                  <span class="font-bold ms-2">{{ areaStore.data['2020'].votes_total }} 票</span>
                 </li>
               </ul>
             </div>
@@ -121,42 +120,23 @@ areaStore.data = data
           :slidesPerView = "0.8"
           :breakpoints = swiperOptions.breakpoints
         >
-        <!-- freemode 沒有作用??? -->
-
-          <SwiperSlide v-if="areaStore.selectedCounty" class="bg-blue-400" >
-            <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg  whitespace-nowrap">
-              <h3 class="font-bold text-xl mb-3"></h3>
-              <ResultTableCounty />
-            </div>
+          <SwiperSlide v-if="areaStore.selectedCounty"  >
+            <ResultTableCounty />
           </SwiperSlide>
           <SwiperSlide  v-if="areaStore.selectedDistrict">
-            <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg w-auto  whitespace-nowrap">
-              <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedDistrict }}</h3>
-              <ResultTableDistrict />
-            </div>
+            <ResultTableDistrict />
           </SwiperSlide>
           <SwiperSlide v-if="areaStore.selectedVillage">
-            <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg w-auto  whitespace-nowrap">
-              <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedVillage }}</h3>
-              <ResultTableVillage />
-            </div>
+            <ResultTableVillage />
           </SwiperSlide>
         </Swiper>
       </div>
-      <Tips v-if="areaStore.selectedCounty == areaStore.selectedDistrict == areaStore.selectedVillage == ''" class="container mx-auto px-6" />
+      <Tips v-if="areaStore.selectedCounty == ''&& areaStore.selectedDistrict =='' && areaStore.selectedVillage == ''" class="container mx-auto px-6" />
       <div v-else class="hidden mx-auto lg:mx-0 lg:w-auto px-6 ms-5 lg:block">
-        <div v-if="areaStore.selectedCounty" class="px-5 py-3 border-2 border-purple-400 bg-purple-50 rounded-lg w-auto  whitespace-nowrap mb-5">
-          <h3 class="font-bold text-xl mb-3">{{ data['2020'].counties[areaStore.selectedCounty].name }}</h3>
-          <ResultTableCounty />
-        </div>
-        <div v-if="areaStore.selectedDistrict" class="px-5 py-3 border-2 border-orange-500 bg-orange-50 rounded-lg mb-5">
-          <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedDistrict }}</h3>
-          <ResultTableDistrict />
-        </div>
-        <div v-if="areaStore.selectedVillage" class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg">
-          <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedVillage }}</h3>
-          <ResultTableVillage />
-        </div>
+        <ResultTableCounty v-if="areaStore.selectedCounty" />
+        <ResultTableDistrict  v-if="areaStore.selectedDistrict" />
+        <ResultTableVillage v-if="areaStore.selectedVillage" />
+
       </div>
     </div>
   </div>

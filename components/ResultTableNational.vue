@@ -5,16 +5,16 @@ const areaStore = useAreaStore()
 const data_national = ref({})
 const candidates = ref(areaStore.data?.['2020'].candidates)
 
-let arr = areaStore.data['2020'].national_total
-arr?.shift()
-let total=0
-arr.forEach((item)=>{total += item.votes})
-data_national.value = {list:arr.sort((a,b)=>b.votes-a.votes), total}
+// let arr = areaStore.data['2020'].national_total
+// arr?.shift()
+// let total=0
+// arr.forEach((item)=>{total += item.votes})
+// data_national.value = {list:arr.sort((a,b)=>b.votes-a.votes), total}
 
 </script>
 <template>
   <div>
-    <table style="width:100%">
+    <!-- <table style="width:100%">
       <tr class=""  v-for="item in data_national.list" :key="item.no">
         <td class="align-top py-1">
           <div class="w-6 h-6 flex items-center justify-center rounded-full text-[12px] bg-[#84CB98] text-white">{{item.no}}</div>
@@ -30,6 +30,6 @@ data_national.value = {list:arr.sort((a,b)=>b.votes-a.votes), total}
           <div class="text-[12px] mb-3">{{item.votes}} 票</div>
         </td>
       </tr>                
-    </table>
+    </table> -->
   </div>
 </template>

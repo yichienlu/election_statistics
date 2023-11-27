@@ -1,14 +1,31 @@
 <script setup>
+import { useAreaStore } from '@/stores/selectArea'
+const areaStore = useAreaStore()
+
 const { $eChart } = useNuxtApp()
 const voteShareChart = ref(null)
-const data = ref([
-  { value: 8170, name: 'DPP' },
-  { value: 5522, name: 'KMT' },
-  { value: 608, name: 'PFP' }
-])
-const color = ref(['#84CB98', '#8894D8','#DFA175'])
+
+
+const party_color = {
+  "DPP":"#84CB98",
+  "KMT":"#8894D8",
+  "PFP":"#DFA175"
+}
+// const color = ref(['#84CB98', '#8894D8','#DFA175'])
 
 onMounted(()=>{
+  let data = JSON.parse(JSON.stringify(areaStore.data['2020'].votes.sort((a,b)=>b.votes - a.votes)))
+  data.map((item, index)=>{
+    data[index]= {value: item.votes, name:item.no}
+  })
+
+  let color = []
+  data.map((item, index)=>{
+    let party = areaStore.data['2020'].candidates[item.name-1].party
+    color[index] = party_color[party]
+  })
+
+
   const myChart = $eChart.init(voteShareChart.value)
   const option = {
   tooltip: {
@@ -21,7 +38,7 @@ onMounted(()=>{
     {
       type: 'pie',
       radius: ['50%', '100%'],
-      color: color.value,
+      color: color,
       label: {
         show: false,
       },
@@ -34,7 +51,7 @@ onMounted(()=>{
       labelLine: {
         show: false
       },
-      data:  data.value
+      data:  data
     }
   ]
 };

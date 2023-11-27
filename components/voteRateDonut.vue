@@ -1,13 +1,18 @@
 <script setup>
 const { $eChart } = useNuxtApp()
 const voteRateChart = ref(null)
-const data = ref([
-  { value: 1048, name: 'Search Engine' },
-  { value: 300, name: 'Video Ads' }
-])
+
+import { useAreaStore } from '@/stores/selectArea'
+const areaStore = useAreaStore()
+
 const color = ref(['#262E49', '#CCCCCC'])
 
 onMounted(()=>{
+  const data = ref([
+  { value: areaStore.data['2020'].votes_total, name: '投票數' },
+  { value: areaStore.data['2020'].electors-areaStore.data['2020'].votes_total, name: '未投票數' }
+])
+
   const myChart = $eChart.init(voteRateChart.value)
   const option = {
   tooltip: {

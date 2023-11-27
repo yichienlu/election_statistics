@@ -5,28 +5,51 @@ const areaStore = useAreaStore()
 const data_county = ref({})
 const candidates = ref(areaStore.data?.['2020'].candidates)
 
-let arr = JSON.parse(JSON.stringify(areaStore.data['2020'].counties[areaStore.selectedCounty].county_total))
-arr?.shift()
-let total=0
-arr.forEach((item)=>{total += item.votes})
-data_county.value = {list:arr.sort((a,b)=>b.votes-a.votes), total}
-// console.log(arr)
+const party_color = {
+  DPP:{normal:"#84CB98",light:"#edf7f0"},
+  KMT:{normal:"#8894D8",light:"#dadef3"},
+  PFP:{normal:"#DFA175",light:"#f5e2d4"},
+}
+
+
+let arr = JSON.parse(JSON.stringify(areaStore.data['2020'].counties[areaStore.selectedCounty].votes))
+arr.sort((a,b)=>b.votes-a.votes)
+data_county.value = arr
+
+
+data_county.value.map((item,index)=>{
+  // console.log(item)
+
+  // data_county.value[index] = item
+  let party = areaStore.data['2020'].candidates[item.no -1].party
+
+  data_county.value[index].color = party_color[party]
+
+
+})
+
+// console.log(data_county.value)
+
+let total = areaStore.data['2020'].counties[areaStore.selectedCounty].votes_total
+
+
 </script>
 <template>
-  <div>
+  <div  class="px-5 py-3 border-2 rounded-lg w-auto  whitespace-nowrap mb-5" :style="{borderColor:data_county[0].color.normal, backgroundColor:data_county[0].color.light}">
+    <h3 class="font-bold text-xl mb-3">{{ areaStore.data['2020'].counties[areaStore.selectedCounty].name }}</h3>
     <table style="width:100%">
-      <tr class=""  v-for="item in data_county.list" :key="item.no">
+      <tr class=""  v-for="item in data_county" :key="item.no">
         <td class="align-top py-1">
-          <div class="w-6 h-6 flex items-center justify-center rounded-full text-[12px] bg-[#84CB98] text-white">{{item.no}}</div>
+          <div class="w-6 h-6 flex items-center justify-center rounded-full text-[12px] text-white" :style="{backgroundColor:item.color.normal}">{{item.no}}  </div>
         </td>
         <td class="py-1">
-          <div class="px-3 mb-3 border-r-2 border-[#84CB98]">
-            <div class="font-bold">{{ candidates[item.no-1].party }}</div>
+          <div class="px-3 mb-3 border-r-2 " :style="{borderColor:item.color.normal}">
+            <div class="font-bold">{{ candidates[item.no-1].party_full }}</div>
             <div class="text-[12px]">{{ candidates[item.no-1].president }} | {{ candidates[item.no-1].vicePresident }}</div>
           </div>
         </td>
         <td class="pl-5 mb-3">
-          <div class="font-bold">{{ (item.votes / data_county.total * 100).toFixed(1) }} %</div>
+          <div class="font-bold">{{ (item.votes / total * 100).toFixed(1) }} %</div>
           <div class="text-[12px] mb-3">{{item.votes}} 票</div>
         </td>
       </tr>                
