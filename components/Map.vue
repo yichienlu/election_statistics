@@ -2,21 +2,38 @@
 import { useAreaStore } from '@/stores/selectArea'
 const areaStore = useAreaStore()
 
-
-const party = ref('DPP')
-const percentage  = ref(60)
-
-const selectCounty = (county) => {
-  areaStore.selectedCounty = county
-  areaStore.districtsList = Object.values(areaStore.data['2020'].counties[county].districts)
-}
-
 const map_arr = JSON.parse(JSON.stringify(Object.values(areaStore.data['2020'].counties)))
 map_arr.map((item, index)=>{
   item.votes.sort((a,b)=>b.votes-a.votes)
   map_arr[index].party = areaStore.data['2020'].candidates[item.votes[0].no-1].party
   map_arr[index].percentage = (item.votes[0].votes / item.votes_total*100).toFixed(2)
 })
+
+const party_color = {
+    DPP:{normal:"#84CB98",light:"#edf7f0"},
+    KMT:{normal:"#8894D8",light:"#dadef3"},
+    PFP:{normal:"#DFA175",light:"#f5e2d4"},
+  }
+const selectCounty = (county) => {
+  areaStore.villagesList = []
+  areaStore.selectedDistrict = ''
+  areaStore.selectedVillage = ''
+  areaStore.selectedCounty = county
+  areaStore.data_district = {}
+  areaStore.data_village = {}
+  areaStore.districtsList = Object.values(areaStore.data['2020'].counties[county].districts)
+
+  let arr = JSON.parse(JSON.stringify(areaStore.data['2020'].counties[areaStore.selectedCounty].votes))
+  arr.sort((a,b)=>b.votes-a.votes)
+  areaStore.data_county = arr
+  areaStore.data_county.map((item,index)=>{
+    let party = areaStore.data['2020'].candidates[item.no -1].party
+    areaStore.data_county[index].color = party_color[party]
+  })
+
+}
+
+
 
 
 
@@ -25,7 +42,7 @@ map_arr.map((item, index)=>{
   <div class="container mx-auto px-6">
     <svg viewBox="0 0 510 700" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path v-for="item in map_arr" 
-      :key="item" class="area" :id="item.id" @click="selectCounty(item.id)"
+      :key="item" class="area" :id="item.id" :value="item.id" @click="selectCounty(item.id)"
       :class="{'DPP':item.party=='DPP', 'KMT':item.party=='KMT','PFP':item.party=='PFP', 'high':item.percentage>60, 'mid':item.percentage>30 || item.percentage <60, 'low':item.percentage<30 }" :d="item.map_d" />
       
       <!-- <path class="area" id="hualian"

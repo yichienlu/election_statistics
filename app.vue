@@ -45,7 +45,7 @@ areaStore.data = data
 <template>
   <div class="bg-[#F5F5F5] min-h-[100vh]">
     <h1 class="bg-primary text-white">
-      <div class="container mx-auto px-6 pt-7 pb-4 sm:pt-4 text-xl sm:text-3xl font-bold">2020 開票地圖 {{ areaStore.selectedCounty }}</div>
+      <div class="container mx-auto px-6 pt-7 pb-4 sm:pt-4 text-xl sm:text-3xl font-bold">2020 開票地圖</div>
     </h1>
 
     <div class="container mx-auto px-6 flex gap-5 pt-5 sm:pt-8 mb-5 font-bold sm:text-xl overflow-hidden">

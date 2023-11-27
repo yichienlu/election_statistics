@@ -25,7 +25,6 @@ export const useAreaStore = defineStore('area', ()=>{
     selectedCounty.value = data.value['2020'].counties[e.target.value].id
     data_district.value = {}
     data_village.value = {}
-
   
     districtsList.value = Object.values(data.value['2020'].counties[e.target.value].districts)
 
