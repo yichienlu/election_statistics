@@ -1,10 +1,7 @@
 <script setup>
 import { useAreaStore } from '@/stores/selectArea'
 const areaStore = useAreaStore()
-
-const data_village = ref({})
 const candidates = ref(areaStore.data?.['2020'].candidates)
-
 
 </script>
 <template>

@@ -73,9 +73,9 @@ areaStore.data = data
             </span>
           </button>
           <div class="duration-200 overflow-hidden" :class="{'h-0 lg:h-auto':!openResult}">
-            <div  class="block xs:flex lg:block items-center mt-5"> 
+            <div  class="block xs:flex lg:block items-center mt-5 mb-10"> 
               <div class="flex items-center">
-                <div class="mr-3 mb-5">
+                <div class="mr-3 lg:mb-5">
                   <ClientOnly>
                     <voteRateDonut />
                   </ClientOnly>
@@ -100,7 +100,7 @@ areaStore.data = data
             <div  class="xs:flex lg:block items-center mt-5">
               <ClientOnly>
                 <!-- <voteShareChart /> -->
-                <voteShareDonut />
+                <voteShareDonut class="lg:mb-5" />
               </ClientOnly>
               <ResultTableNational class="ms-3 lg:ms-0 whitespace-nowrap" />
             </div>
