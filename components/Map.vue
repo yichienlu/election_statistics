@@ -11,53 +11,22 @@ const selectCounty = (county) => {
   areaStore.districtsList = Object.values(areaStore.data['2020'].counties[county].districts)
 }
 
-// const color_palette = ref({
-//   DPP: {
-//     low: ['#f3faf5','#edf7f0','#d9efdf'],
-//     mid: ['#84cb98','#77b789','#6aa27a'],
-//     high:['#639872','#4f7a5b','#3b5b44'],
-//     darker:'#2e4735'
-//   },
-//   KMT: {
-//     low: ['#f3f4fb','#edeff9','#dadef3'],
-//     mid: ['#8894D8','#7A85C2','#6D76AD'],
-//     high:['#666FA2','#525982','#3D4361'],
-//     darker:'#30344C '
-//   },
-//   PFP: {
-//     low: ['#fcf6f1','#FAF1EA','#F5E2D4'],
-//     mid: ['#DFA175','#C99169','#B2815E'],
-//     high:['#A77958','#866146','#644835'],
-//     darker:'#4E3829'
-//   }
-// }) 
-
-onMounted(()=>{
-//   const map_data = JSON.parse(JSON.stringify(Object.values(areaStore.data['2020'].counties)))
-//   map_data.map((item,index)=>{
-//     // console.log(item.county_total)
-//     item.county_total.shift()
-//     item.county_total.sort((a,b)=>b.votes-a.votes)
-//     console.log(item.county_total)
-//     let total = 0
-//     map_data[index].total=item.county_total.forEach((item)=>total+=item.votes)
-
-//   })
-// console.log(map_data)
-
+const map_arr = JSON.parse(JSON.stringify(Object.values(areaStore.data['2020'].counties)))
+map_arr.map((item, index)=>{
+  item.votes.sort((a,b)=>b.votes-a.votes)
+  map_arr[index].party = areaStore.data['2020'].candidates[item.votes[0].no-1].party
+  map_arr[index].percentage = (item.votes[0].votes / item.votes_total*100).toFixed(2)
 })
-
 
 
 
 </script>
 <template>
   <div class="container mx-auto px-6">
-    <!-- {{ Object.values(areaStore.data['2020'].counties) }} -->
     <svg viewBox="0 0 510 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path v-for="item in Object.values(areaStore.data['2020'].counties)" 
+      <path v-for="item in map_arr" 
       :key="item" class="area" :id="item.id" @click="selectCounty(item.id)"
-      :class="{'DPP':party=='DPP', 'KMT':party=='KMT','PFP':party=='PFP', 'high':percentage>60, 'mid':percentage>30 || percentage <60, 'low':percentage<30 }" :d="item.map_d" />
+      :class="{'DPP':item.party=='DPP', 'KMT':item.party=='KMT','PFP':item.party=='PFP', 'high':item.percentage>60, 'mid':item.percentage>30 || item.percentage <60, 'low':item.percentage<30 }" :d="item.map_d" />
       
       <!-- <path class="area" id="hualian"
        d="" />
