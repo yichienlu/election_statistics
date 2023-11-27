@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 lg:block gap-5">
+  <div class="grid sm:grid-cols-2 lg:block gap-5">
     <div class=" lg:w-[260px] rounded-lg bg-[#DEE0E4] p-5 lg:mb-5">
       <h2 class="flex gap-2 items-center mb-2">
         <Icon name="material-symbols:info-outline" class="h-6 w-6" />

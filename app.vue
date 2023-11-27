@@ -131,7 +131,7 @@ areaStore.data = data
           </SwiperSlide>
         </Swiper>
       </div>
-      <Tips v-if="areaStore.selectedCounty == ''&& areaStore.selectedDistrict =='' && areaStore.selectedVillage == ''" class="container mx-auto px-6" />
+      <Tips v-if="areaStore.selectedCounty == ''&& areaStore.selectedDistrict =='' && areaStore.selectedVillage == ''" class="container mx-auto lg:mx-0 px-6 lg:w-auto" />
       <div v-else class="hidden mx-auto lg:mx-0 lg:w-auto px-6 ms-5 lg:block">
         <ResultTableCounty v-if="areaStore.selectedCounty" />
         <ResultTableDistrict  v-if="areaStore.selectedDistrict" />

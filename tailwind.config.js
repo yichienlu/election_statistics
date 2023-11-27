@@ -9,10 +9,6 @@ module.exports = {
         DPPLightHover: '#edf7f0',
         DPPLightActive: '#d9efdf',
         DPPNormal:'#84cb98',
-      },
-      screens:{
-        'xs':'475px',
-        '2xs': '320px'
       }
     }
   }
