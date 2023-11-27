@@ -113,37 +113,38 @@ areaStore.data = data
         
       <div class="lg:hidden">
 
-      <Swiper
-        :spaceBetween = 20
-        :slidesOffsetBefore = 24
-        :slidesOffsetAfter = 24
-        :free-mode=true 
-        :slidesPerView = "0.8"
-        :breakpoints = swiperOptions.breakpoints
-      >
-      <!-- freemode 沒有作用??? -->
+        <Swiper
+          :spaceBetween = 20
+          :slidesOffsetBefore = 24
+          :slidesOffsetAfter = 24
+          :free-mode=true 
+          :slidesPerView = "0.8"
+          :breakpoints = swiperOptions.breakpoints
+        >
+        <!-- freemode 沒有作用??? -->
 
-        <SwiperSlide v-if="areaStore.selectedCounty" class="bg-blue-400" >
-          <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg  whitespace-nowrap">
-            <h3 class="font-bold text-xl mb-3"></h3>
-            <ResultTableCounty />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide  v-if="areaStore.selectedDistrict">
-          <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg w-auto  whitespace-nowrap">
-            <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedDistrict }}</h3>
-            <ResultTableDistrict />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide v-if="areaStore.selectedVillage">
-          <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg w-auto  whitespace-nowrap">
-            <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedVillage }}</h3>
-            <ResultTableVillage />
-          </div>
-        </SwiperSlide>
-      </Swiper>
-    </div>
-      <div class="hidden container mx-auto lg:mx-0 lg:w-auto px-6 ms-5 lg:block">
+          <SwiperSlide v-if="areaStore.selectedCounty" class="bg-blue-400" >
+            <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg  whitespace-nowrap">
+              <h3 class="font-bold text-xl mb-3"></h3>
+              <ResultTableCounty />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide  v-if="areaStore.selectedDistrict">
+            <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg w-auto  whitespace-nowrap">
+              <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedDistrict }}</h3>
+              <ResultTableDistrict />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide v-if="areaStore.selectedVillage">
+            <div class="px-5 py-3 border-2 border-[#84CB98] bg-[#EDF7F0] rounded-lg w-auto  whitespace-nowrap">
+              <h3 class="font-bold text-xl mb-3">{{ areaStore.selectedVillage }}</h3>
+              <ResultTableVillage />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+      <Tips v-if="areaStore.selectedCounty == areaStore.selectedDistrict == areaStore.selectedVillage == ''" class="container mx-auto px-6" />
+      <div v-else class="hidden mx-auto lg:mx-0 lg:w-auto px-6 ms-5 lg:block">
         <div v-if="areaStore.selectedCounty" class="px-5 py-3 border-2 border-purple-400 bg-purple-50 rounded-lg w-auto  whitespace-nowrap mb-5">
           <h3 class="font-bold text-xl mb-3">{{ data['2020'].counties[areaStore.selectedCounty].name }}</h3>
           <ResultTableCounty />
@@ -157,7 +158,6 @@ areaStore.data = data
           <ResultTableVillage />
         </div>
       </div>
-
     </div>
   </div>
 </template>
