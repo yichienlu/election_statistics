@@ -75,7 +75,7 @@ areaStore.data = data
           <div class="duration-200 overflow-hidden" :class="{'h-0 lg:h-auto':!openResult}">
             <div  class="block sm:flex lg:block items-center mt-5 mb-10"> 
               <div class="flex items-center">
-                <div class="mr-3 lg:mb-5">
+                <div class="mr-3 mb-5 sm:mb-0 lg:mb-5">
                   <ClientOnly>
                     <voteRateDonut />
                   </ClientOnly>
@@ -99,8 +99,7 @@ areaStore.data = data
             </div>
             <div  class="sm:flex lg:block items-center mt-5">
               <ClientOnly>
-                <!-- <voteShareChart /> -->
-                <voteShareDonut class="lg:mb-5" />
+                <voteShareDonut class="mb-5 sm:mb-0 lg:mb-5" />
               </ClientOnly>
               <ResultTableNational class="ms-3 lg:ms-0 whitespace-nowrap" />
             </div>
@@ -142,8 +141,5 @@ areaStore.data = data
   </div>
 </template>
 <style lang="scss" scoped>
-* {
-  outline: 1px solid #a00;
-}
 
 </style>

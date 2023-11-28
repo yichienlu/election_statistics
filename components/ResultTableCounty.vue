@@ -8,7 +8,7 @@ const candidates = ref(areaStore.data?.['2020'].candidates)
 
 </script>
 <template>
-  <div  class="px-5 py-3 border-2 rounded-lg w-auto  whitespace-nowrap mb-5" :style="{borderColor:areaStore.data_county[0].color.normal, backgroundColor:areaStore.data_county[0].color.light}">
+  <div  class="lg:w-[260px] px-5 py-3 border-2 rounded-lg whitespace-nowrap mb-5" :style="{borderColor:areaStore.data_county[0].color.normal, backgroundColor:areaStore.data_county[0].color.light}">
     <h3 class="font-bold text-xl mb-3">{{ areaStore.data['2020'].counties[areaStore.selectedCounty].name }}</h3>
     <table style="width:100%">
       <tr class=""  v-for="item in areaStore.data_county" :key="item.no">

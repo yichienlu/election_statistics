@@ -51,3 +51,9 @@ myChart.setOption(option)
 <template>
   <div id="voteRateChart" ref="voteRateChart" class="w-32 h-32"></div>
 </template>
+
+<style>
+*{
+  outline: 1px solid #A00
+}
+</style>

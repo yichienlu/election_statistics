@@ -29,9 +29,3 @@
     </div>
   </div>
 </template>
-
-<style>
-*{
-  outline:1px solid #A00
-}
-</style>

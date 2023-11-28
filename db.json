@@ -47,9 +47,17 @@
               "東榮里":{"name":"東榮里","votes_total":3446, "votes":[{"no":1,"votes":174},{"no":2,"votes":2173},{"no":3,"votes":2660}]}
             }
           },
-          "士林區":{"name":"士林區","votes_total":0,"votes":[{"no":1,"votes":7185},{"no":2,"votes":104881},{"no":3,"votes":64207}],"villages":{}}
-
-
+          "信義區":{"name":"信義區","votes_total":138516,"votes":[{"no":1,"votes":5878},{"no":2,"votes":62353},{"no":3,"votes":70285}],"villages":{}},
+          "大安區":{"name":"大安區","votes_total":182001,"votes":[{"no":1,"votes":7534},{"no":2,"votes":85490},{"no":3,"votes":88977}],"villages":{}},
+          "中山區":{"name":"中山區","votes_total":141880,"votes":[{"no":1,"votes":6367},{"no":2,"votes":56491},{"no":3,"votes":79022}],"villages":{}},
+          "中正區":{"name":"中正區","votes_total":93832,"votes":[{"no":1,"votes":4188},{"no":2,"votes":41461},{"no":3,"votes":48183}],"villages":{}},
+          "大同區":{"name":"大同區","votes_total":78142,"votes":[{"no":1,"votes":3463},{"no":2,"votes":24673},{"no":3,"votes":50006}],"villages":{}},
+          "萬華區":{"name":"萬華區","votes_total":118574,"votes":[{"no":1,"votes":5008},{"no":2,"votes":46700},{"no":3,"votes":66866}],"villages":{}},
+          "文山區":{"name":"文山區","votes_total":167936,"votes":[{"no":1,"votes":7502},{"no":2,"votes":82305},{"no":3,"votes":78129}],"villages":{}},
+          "南港區":{"name":"南港區","votes_total":75346,"votes":[{"no":1,"votes":3409},{"no":2,"votes":30968},{"no":3,"votes":40969}],"villages":{}},
+          "內湖區":{"name":"內湖區","votes_total":177062,"votes":[{"no":1,"votes":8356},{"no":2,"votes":74437},{"no":3,"votes":94269}],"villages":{}},
+          "士林區":{"name":"士林區","votes_total":177249,"votes":[{"no":1,"votes":7185},{"no":2,"votes":65183},{"no":3,"votes":104881}],"villages":{}},
+          "北投區":{"name":"北投區","votes_total":156354,"votes":[{"no":1,"votes":6443},{"no":2,"votes":59851},{"no":3,"votes":90060}],"villages":{}}
         }
       },
       "new_taipei":{
@@ -57,14 +65,54 @@
         "name": "新北市",
         "map_d":"M323.483 43.3703C321.385 41.1538 321.716 37.9399 324.256 36.1667L374.402 1.14606C376.943 -0.627138 380.809 -0.294664 383.018 1.81101L403.783 21.2053C405.992 23.311 407.539 27.4115 407.207 30.5146L406.103 39.8239C405.771 42.8162 407.87 45.6976 410.963 46.2517L434.158 50.0198C437.14 50.4631 439.902 48.4682 440.343 45.3651L441.448 37.3858C441.89 34.3935 444.541 32.2878 447.302 32.7311C450.063 33.1744 453.819 35.6126 455.365 38.2724L461.551 48.2466C463.097 50.7956 462.545 54.4528 460.115 56.3368L450.063 64.2054C447.633 66.0894 443.767 69.1925 441.448 71.0765L393.4 109.754C391.081 111.638 387.436 111.417 385.337 109.2L323.483 43.3703ZM355.957 35.7234C353.637 37.7182 353.306 41.1538 355.294 43.4811L383.46 76.9502C385.448 79.2775 388.872 79.61 391.191 77.6151L406.655 64.5378C408.974 62.543 409.306 59.1074 407.318 56.7801L379.262 23.311C377.274 20.9837 373.85 20.6512 371.531 22.6461L355.957 35.7234Z",
         "votes_total":2466187,
-        "votes":[{"no":1,"votes":112620},{"no":2,"votes":959631},{"no":3,"votes":1393936}]
+        "votes":[{"no":1,"votes":112620},{"no":2,"votes":959631},{"no":3,"votes":1393936}],
+        "districts":{
+          "板橋區":{"name":"板橋區","votes_total":343775,"votes":[{"no":1,"votes":15719},{"no":2,"votes":123922},{"no":3,"votes":204134}],"villages":{}},
+          "三重區":{"name":"三重區","votes_total":243246,"votes":[{"no":1,"votes":11087},{"no":2,"votes":78055},{"no":3,"votes":154104}],"villages":{}},
+          "中和區":{"name":"中和區","votes_total":264352,"votes":[{"no":1,"votes":12066},{"no":2,"votes":120502},{"no":3,"votes":131784}],"villages":{}},
+          "永和區":{"name":"永和區","votes_total":139071,"votes":[{"no":1,"votes":6286},{"no":2,"votes":69190},{"no":3,"votes":63595}],"villages":{}},
+          "新莊區":{"name":"新莊區","votes_total":252873,"votes":[{"no":1,"votes":11772},{"no":2,"votes":83491},{"no":3,"votes":157610}],"villages":{}},
+          "新店區":{"name":"新店區","votes_total":193162,"votes":[{"no":1,"votes":8175},{"no":2,"votes":99844},{"no":3,"votes":85143}],"villages":{}},
+          "樹林區":{"name":"樹林區","votes_total":110162,"votes":[{"no":1,"votes":5318},{"no":2,"votes":38429},{"no":3,"votes":66415}],"villages":{}},
+          "鶯歌區":{"name":"鶯歌區","votes_total":51691,"votes":[{"no":1,"votes":2510},{"no":2,"votes":18102},{"no":3,"votes":31079}],"villages":{}},
+          "三峽區":{"name":"三峽區","votes_total":66442,"votes":[{"no":1,"votes":3027},{"no":2,"votes":25338},{"no":3,"votes":38077}],"villages":{}},
+          "淡水區":{"name":"淡水區","votes_total":107533,"votes":[{"no":1,"votes":5054},{"no":2,"votes":44807},{"no":3,"votes":57672}],"villages":{}},
+          "汐止區":{"name":"汐止區","votes_total":126844,"votes":[{"no":1,"votes":5850},{"no":2,"votes":53644},{"no":3,"votes":67350}],"villages":{}},
+          "瑞芳區":{"name":"瑞芳區","votes_total":23333,"votes":[{"no":1,"votes":1023},{"no":2,"votes":10072},{"no":3,"votes":12238}],"villages":{}},
+          "土城區":{"name":"土城區","votes_total":145093,"votes":[{"no":1,"votes":6899},{"no":2,"votes":52751},{"no":3,"votes":85443}],"villages":{}},
+          "蘆洲區":{"name":"蘆洲區","votes_total":121237,"votes":[{"no":1,"votes":5504},{"no":2,"votes":36875},{"no":3,"votes":78858}],"villages":{}},
+          "五股區":{"name":"五股區","votes_total":52642,"votes":[{"no":1,"votes":2391},{"no":2,"votes":17969},{"no":3,"votes":32282}],"villages":{}},
+          "泰山區":{"name":"泰山區","votes_total":46685,"votes":[{"no":1,"votes":2052},{"no":2,"votes":16715},{"no":3,"votes":27918}],"villages":{}},
+          "林口區":{"name":"林口區","votes_total":65694,"votes":[{"no":1,"votes":3501},{"no":2,"votes":26140},{"no":3,"votes":36053}],"villages":{}},
+          "深坑區":{"name":"深坑區","votes_total":15043,"votes":[{"no":1,"votes":617},{"no":2,"votes":6374},{"no":3,"votes":8052}],"villages":{}},
+          "石碇區":{"name":"石碇區","votes_total":4798,"votes":[{"no":1,"votes":171},{"no":2,"votes":1592},{"no":3,"votes":3035}],"villages":{}},
+          "坪林區":{"name":"坪林區","votes_total":4182,"votes":[{"no":1,"votes":132},{"no":2,"votes":1362},{"no":3,"votes":2688}],"villages":{}},
+          "三芝區":{"name":"三芝區","votes_total":13476,"votes":[{"no":1,"votes":512},{"no":2,"votes":5605},{"no":3,"votes":7359}],"villages":{}},
+          "石門區":{"name":"石門區","votes_total":6957,"votes":[{"no":1,"votes":249},{"no":2,"votes":2871},{"no":3,"votes":3837}],"villages":{}},
+          "八里區":{"name":"八里區","votes_total":23395,"votes":[{"no":1,"votes":1083},{"no":2,"votes":8736},{"no":3,"votes":13576}],"villages":{}},
+          "平溪區":{"name":"平溪區","votes_total":2869,"votes":[{"no":1,"votes":97},{"no":2,"votes":1174},{"no":3,"votes":1598}],"villages":{}},
+          "雙溪區":{"name":"雙溪區","votes_total":5171,"votes":[{"no":1,"votes":191},{"no":2,"votes":2165},{"no":3,"votes":2815}],"villages":{}},
+          "貢寮區":{"name":"貢寮區","votes_total":7068,"votes":[{"no":1,"votes":234},{"no":2,"votes":2113},{"no":3,"votes":4721}],"villages":{}},
+          "金山區":{"name":"金山區","votes_total":12822,"votes":[{"no":1,"votes":465},{"no":2,"votes":4693},{"no":3,"votes":7664}],"villages":{}},
+          "萬里區":{"name":"萬里區","votes_total":12881,"votes":[{"no":1,"votes":462},{"no":2,"votes":5206},{"no":3,"votes":7213}],"villages":{}},
+          "烏來區":{"name":"烏來區","votes_total":3690,"votes":[{"no":1,"votes":173},{"no":2,"votes":1894},{"no":3,"votes":1623}],"villages":{}}
+        }
       },
       "keelung":{
         "id":"keelung",
         "name": "基隆市",
         "map_d":"M418.358 41.0156C415.465 40.551 413.323 37.5314 413.644 34.2794L413.751 33.0019C414.073 29.8661 416.751 27.6594 419.644 28.124L429.714 29.75C432.606 30.2145 434.642 33.2342 434.321 36.37L434.106 37.7636C433.678 40.8994 431 43.1061 428.107 42.6416L418.358 41.0156Z",
         "votes_total":226204,
-        "votes":[{"no":1,"votes":11878},{"no":2,"votes":99360},{"no":3,"votes":114966}]
+        "votes":[{"no":1,"votes":11878},{"no":2,"votes":99360},{"no":3,"votes":114966}],
+        "districts":{
+          "中正區":{"name":"中正區","votes_total":31045,"votes":[{"no":1,"votes":1618},{"no":2,"votes":13887},{"no":3,"votes":15540}],"villages":{}},
+          "七堵區":{"name":"七堵區","votes_total":32949,"votes":[{"no":1,"votes":1815},{"no":2,"votes":13618},{"no":3,"votes":17516}],"villages":{}},
+          "暖暖區":{"name":"暖暖區","votes_total":23503,"votes":[{"no":1,"votes":1306},{"no":2,"votes":10660},{"no":3,"votes":11537}],"villages":{}},
+          "仁愛區":{"name":"仁愛區","votes_total":25748,"votes":[{"no":1,"votes":1305},{"no":2,"votes":10742},{"no":3,"votes":13701}],"villages":{}},
+          "中山區":{"name":"中山區","votes_total":29079,"votes":[{"no":1,"votes":1579},{"no":2,"votes":12468},{"no":3,"votes":15032}],"villages":{}},
+          "安樂區":{"name":"安樂區","votes_total":50495,"votes":[{"no":1,"votes":2560},{"no":2,"votes":22200},{"no":3,"votes":25735}],"villages":{}},
+          "信義區":{"name":"信義區","votes_total":33385,"votes":[{"no":1,"votes":1695},{"no":2,"votes":15785},{"no":3,"votes":15905}],"villages":{}}
+        }
       },
       "taoyuan":{
         "id":"taoyuan",
@@ -72,7 +120,106 @@
         "name": "桃園市",
         "map_d":"M280.94 74.2133C278.716 72.0992 278.938 68.8725 281.384 67.0922L309.624 46.2851C312.07 44.5048 315.85 44.8387 317.963 47.064L380.446 113.38C382.558 115.605 382.336 118.943 379.89 120.946L357.432 138.971C355.097 140.863 351.317 140.751 349.093 138.637L280.94 74.2133Z",
         "votes_total":1311141,
-        "votes":[{"no":1,"votes":63132},{"no":2,"votes":529749},{"no":3,"votes":718260}]
+        "votes":[{"no":1,"votes":63132},{"no":2,"votes":529749},{"no":3,"votes":718260}],
+        "districts":{
+          "桃園區":{
+            "name":"桃園區","votes_total":262025,"votes":[{"no":1,"votes":12661},{"no":2,"votes":102460},{"no":3,"votes":146904}],
+            "villages":{
+              "三元里":{"name":"三元里","votes_total":2636,"votes":[{"no":1,"votes":131},{"no":2,"votes":1072},{"no":3,"votes":1433}]},
+              "三民里":{"name":"三民里","votes_total":3119,"votes":[{"no":1,"votes":173},{"no":2,"votes":1417},{"no":3,"votes":1529}]},
+              "大有里":{"name":"大有里","votes_total":4339,"votes":[{"no":1,"votes":238},{"no":2,"votes":1863},{"no":3,"votes":2238}]},
+              "大業里":{"name":"大業里","votes_total":3484,"votes":[{"no":1,"votes":179},{"no":2,"votes":1413},{"no":3,"votes":1892}]},
+              "大興里":{"name":"大興里","votes_total":3803,"votes":[{"no":1,"votes":165},{"no":2,"votes":1427},{"no":3,"votes":2211}]},
+              "汴洲里":{"name":"汴洲里","votes_total":3945,"votes":[{"no":1,"votes":201},{"no":2,"votes":1333},{"no":3,"votes":2411}]},
+              "忠義里":{"name":"忠義里","votes_total":2445,"votes":[{"no":1,"votes":129},{"no":2,"votes":988},{"no":3,"votes":1328}]},
+              "青溪里":{"name":"青溪里","votes_total":3143,"votes":[{"no":1,"votes":149},{"no":2,"votes":1038},{"no":3,"votes":1956}]},
+              "春日里":{"name":"春日里","votes_total":4236,"votes":[{"no":1,"votes":240},{"no":2,"votes":1564},{"no":3,"votes":2432}]},
+              "會稽里":{"name":"會稽里","votes_total":6468,"votes":[{"no":1,"votes":332},{"no":2,"votes":2821},{"no":3,"votes":3315}]},
+              "萬壽里":{"name":"萬壽里","votes_total":680,"votes":[{"no":1,"votes":23},{"no":2,"votes":236},{"no":3,"votes":421}]},
+              "福元里":{"name":"福元里","votes_total":2992,"votes":[{"no":1,"votes":161},{"no":2,"votes":1223},{"no":3,"votes":1608}]},
+              "寶山里":{"name":"寶山里","votes_total":5686,"votes":[{"no":1,"votes":291},{"no":2,"votes":2309},{"no":3,"votes":3086}]},
+              "大林里":{"name":"大林里","votes_total":4837,"votes":[{"no":1,"votes":247},{"no":2,"votes":1695},{"no":3,"votes":2895}]},
+              "大樹里":{"name":"大樹里","votes_total":2797,"votes":[{"no":1,"votes":122},{"no":2,"votes":1021},{"no":3,"votes":1654}]},
+              "大豐里":{"name":"大豐里","votes_total":3608,"votes":[{"no":1,"votes":175},{"no":2,"votes":1288},{"no":3,"votes":2145}]},
+              "建國里":{"name":"建國里","votes_total":3661,"votes":[{"no":1,"votes":154},{"no":2,"votes":1471},{"no":3,"votes":2036}]},
+              "雲林里":{"name":"雲林里","votes_total":4443,"votes":[{"no":1,"votes":201},{"no":2,"votes":1762},{"no":3,"votes":2480}]},
+              "福安里":{"name":"福安里","votes_total":3054,"votes":[{"no":1,"votes":140},{"no":2,"votes":1189},{"no":3,"votes":1725}]},
+              "福林里":{"name":"福林里","votes_total":4412,"votes":[{"no":1,"votes":183},{"no":2,"votes":1695},{"no":3,"votes":2534}]},
+              "豐林里":{"name":"豐林里","votes_total":4595,"votes":[{"no":1,"votes":214},{"no":2,"votes":1739},{"no":3,"votes":2642}]},
+              "中和里":{"name":"中和里","votes_total":989,"votes":[{"no":1,"votes":52},{"no":2,"votes":310},{"no":3,"votes":627}]},
+              "中興里":{"name":"中興里","votes_total":3998,"votes":[{"no":1,"votes":166},{"no":2,"votes":1371},{"no":3,"votes":2461}]},
+              "文化里":{"name":"文化里","votes_total":587,"votes":[{"no":1,"votes":38},{"no":2,"votes":222},{"no":3,"votes":327}]},
+              "文昌里":{"name":"文昌里","votes_total":577,"votes":[{"no":1,"votes":22},{"no":2,"votes":178},{"no":3,"votes":377}]},
+              "文明里":{"name":"文明里","votes_total":1005,"votes":[{"no":1,"votes":48},{"no":2,"votes":381},{"no":3,"votes":576}]},
+              "北門里":{"name":"北門里","votes_total":1272,"votes":[{"no":1,"votes":44},{"no":2,"votes":464},{"no":3,"votes":764}]},
+              "民生里":{"name":"民生里","votes_total":1043,"votes":[{"no":1,"votes":52},{"no":2,"votes":366},{"no":3,"votes":625}]},
+              "永興里":{"name":"永興里","votes_total":1300,"votes":[{"no":1,"votes":66},{"no":2,"votes":406},{"no":3,"votes":828}]},
+              "光興里":{"name":"光興里","votes_total":3535,"votes":[{"no":1,"votes":134},{"no":2,"votes":1255},{"no":3,"votes":2146}]},
+              "西門里":{"name":"西門里","votes_total":1080,"votes":[{"no":1,"votes":62},{"no":2,"votes":435},{"no":3,"votes":583}]},
+              "西湖里":{"name":"西湖里","votes_total":1101,"votes":[{"no":1,"votes":53},{"no":2,"votes":430},{"no":3,"votes":618}]},
+              "武陵里":{"name":"武陵里","votes_total":1105,"votes":[{"no":1,"votes":46},{"no":2,"votes":406},{"no":3,"votes":653}]},
+              "長美里":{"name":"長美里","votes_total":717,"votes":[{"no":1,"votes":16},{"no":2,"votes":225},{"no":3,"votes":476}]},
+              "南門里":{"name":"南門里","votes_total":4220,"votes":[{"no":1,"votes":197},{"no":2,"votes":1613},{"no":3,"votes":2410}]},
+              "南華里":{"name":"南華里","votes_total":1019,"votes":[{"no":1,"votes":48},{"no":2,"votes":347},{"no":3,"votes":624}]},
+              "中山里":{"name":"中山里","votes_total":4912,"votes":[{"no":1,"votes":272},{"no":2,"votes":1902},{"no":3,"votes":2738}]},
+              "中平里":{"name":"中平里","votes_total":3365,"votes":[{"no":1,"votes":167},{"no":2,"votes":1371},{"no":3,"votes":1827}]},
+              "中正里":{"name":"中正里","votes_total":4269,"votes":[{"no":1,"votes":195},{"no":2,"votes":1749},{"no":3,"votes":2325}]},
+              "中成里":{"name":"中成里","votes_total":3500,"votes":[{"no":1,"votes":123},{"no":2,"votes":1325},{"no":3,"votes":2052}]},
+              "中信里":{"name":"中信里","votes_total":4026,"votes":[{"no":1,"votes":175},{"no":2,"votes":1638},{"no":3,"votes":2213}]},
+              "中原里":{"name":"中原里","votes_total":3408,"votes":[{"no":1,"votes":184},{"no":2,"votes":1415},{"no":3,"votes":1809}]},
+              "中泰里":{"name":"中泰里","votes_total":3047,"votes":[{"no":1,"votes":160},{"no":2,"votes":1335},{"no":3,"votes":1552}]},
+              "中聖里":{"name":"中聖里","votes_total":3840,"votes":[{"no":1,"votes":214},{"no":2,"votes":1767},{"no":3,"votes":1859}]},
+              "中路里":{"name":"中路里","votes_total":2862,"votes":[{"no":1,"votes":130},{"no":2,"votes":1174},{"no":3,"votes":1558}]},
+              "中德里":{"name":"中德里","votes_total":4804,"votes":[{"no":1,"votes":227},{"no":2,"votes":1842},{"no":3,"votes":2735}]},
+              "文中里":{"name":"文中里","votes_total":2155,"votes":[{"no":1,"votes":111},{"no":2,"votes":801},{"no":3,"votes":1243}]},
+              "玉山里":{"name":"玉山里","votes_total":3632,"votes":[{"no":1,"votes":146},{"no":2,"votes":1344},{"no":3,"votes":2142}]},
+              "泰山里":{"name":"泰山里","votes_total":2756,"votes":[{"no":1,"votes":142},{"no":2,"votes":1052},{"no":3,"votes":1562}]},
+              "龍山里":{"name":"龍山里","votes_total":2419,"votes":[{"no":1,"votes":101},{"no":2,"votes":1045},{"no":3,"votes":1273}]},
+              "龍安里":{"name":"龍安里","votes_total":3804,"votes":[{"no":1,"votes":196},{"no":2,"votes":1485},{"no":3,"votes":2123}]},
+              "龍岡里":{"name":"龍岡里","votes_total":4173,"votes":[{"no":1,"votes":199},{"no":2,"votes":1825},{"no":3,"votes":2149}]},
+              "龍祥里":{"name":"龍祥里","votes_total":3447,"votes":[{"no":1,"votes":195},{"no":2,"votes":1528},{"no":3,"votes":1724}]},
+              "龍壽里":{"name":"龍壽里","votes_total":4389,"votes":[{"no":1,"votes":223},{"no":2,"votes":1656},{"no":3,"votes":2510}]},
+              "龍鳳里":{"name":"龍鳳里","votes_total":5285,"votes":[{"no":1,"votes":275},{"no":2,"votes":2218},{"no":3,"votes":2792}]},
+              "中埔里":{"name":"中埔里","votes_total":1714,"votes":[{"no":1,"votes":76},{"no":2,"votes":502},{"no":3,"votes":1136}]},
+              "中寧里":{"name":"中寧里","votes_total":4237,"votes":[{"no":1,"votes":206},{"no":2,"votes":1771},{"no":3,"votes":2260}]},
+              "北埔里":{"name":"北埔里","votes_total":3250,"votes":[{"no":1,"votes":163},{"no":2,"votes":1280},{"no":3,"votes":1807}]},
+              "永安里":{"name":"永安里","votes_total":3273,"votes":[{"no":1,"votes":147},{"no":2,"votes":1011},{"no":3,"votes":2115}]},
+              "同安里":{"name":"同安里","votes_total":6283,"votes":[{"no":1,"votes":313},{"no":2,"votes":2456},{"no":3,"votes":3514}]},
+              "同德里":{"name":"同德里","votes_total":4300,"votes":[{"no":1,"votes":222},{"no":2,"votes":1836},{"no":3,"votes":2242}]},
+              "自強里":{"name":"自強里","votes_total":5357,"votes":[{"no":1,"votes":295},{"no":2,"votes":2171},{"no":3,"votes":2891}]},
+              "西埔里":{"name":"西埔里","votes_total":2263,"votes":[{"no":1,"votes":88},{"no":2,"votes":660},{"no":3,"votes":1515}]},
+              "明德里":{"name":"明德里","votes_total":2264,"votes":[{"no":1,"votes":107},{"no":2,"votes":977},{"no":3,"votes":1180}]},
+              "東埔里":{"name":"東埔里","votes_total":3321,"votes":[{"no":1,"votes":109},{"no":2,"votes":1136},{"no":3,"votes":2076}]},
+              "長安里":{"name":"長安里","votes_total":2659,"votes":[{"no":1,"votes":108},{"no":2,"votes":903},{"no":3,"votes":1648}]},
+              "長德里":{"name":"長德里","votes_total":3608,"votes":[{"no":1,"votes":190},{"no":2,"votes":1314},{"no":3,"votes":2104}]},
+              "信光里":{"name":"信光里","votes_total":4864,"votes":[{"no":1,"votes":204},{"no":2,"votes":1763},{"no":3,"votes":2897}]},
+              "南埔里":{"name":"南埔里","votes_total":3492,"votes":[{"no":1,"votes":173},{"no":2,"votes":1313},{"no":3,"votes":2006}]},
+              "莊敬里":{"name":"莊敬里","votes_total":6133,"votes":[{"no":1,"votes":299},{"no":2,"votes":2678},{"no":3,"votes":3156}]},
+              "慈文里":{"name":"慈文里","votes_total":4361,"votes":[{"no":1,"votes":206},{"no":2,"votes":1647},{"no":3,"votes":2508}]},
+              "新埔里":{"name":"新埔里","votes_total":6778,"votes":[{"no":1,"votes":304},{"no":2,"votes":2849},{"no":3,"votes":3625}]},
+              "瑞慶里":{"name":"瑞慶里","votes_total":4085,"votes":[{"no":1,"votes":227},{"no":2,"votes":1625},{"no":3,"votes":2233}]},
+              "寶安里":{"name":"寶安里","votes_total":5626,"votes":[{"no":1,"votes":318},{"no":2,"votes":2331},{"no":3,"votes":2977}]},
+              "寶慶里":{"name":"寶慶里","votes_total":4339,"votes":[{"no":1,"votes":229},{"no":2,"votes":1762},{"no":3,"votes":2348}]},
+              "朝陽里":{"name":"朝陽里","votes_total":1406,"votes":[{"no":1,"votes":57},{"no":2,"votes":489},{"no":3,"votes":860}]},
+              "成功里":{"name":"成功里","votes_total":2907,"votes":[{"no":1,"votes":138},{"no":2,"votes":1164},{"no":3,"votes":1605}]},
+              "東門里":{"name":"東門里","votes_total":2126,"votes":[{"no":1,"votes":80},{"no":2,"votes":860},{"no":3,"votes":1186}]},
+              "東山里":{"name":"東山里","votes_total":1355,"votes":[{"no":1,"votes":75},{"no":2,"votes":517},{"no":3,"votes":763}]}
+
+            }
+          },
+          "中壢區":{"name":"中壢區","votes_total":246001,"votes":[{"no":1,"votes":11902},{"no":2,"votes":107499},{"no":3,"votes":126600}],"villages":{}},
+          "大溪區":{"name":"大溪區","votes_total":56320,"votes":[{"no":1,"votes":2393},{"no":2,"votes":21126},{"no":3,"votes":32801}],"villages":{}},
+          "楊梅區":{"name":"楊梅區","votes_total":99195,"votes":[{"no":1,"votes":4906},{"no":2,"votes":42840},{"no":3,"votes":51449}],"villages":{}},
+          "蘆竹區":{"name":"蘆竹區","votes_total":93787,"votes":[{"no":1,"votes":4593},{"no":2,"votes":33227},{"no":3,"votes":55967}],"villages":{}},
+          "大園區":{"name":"大園區","votes_total":54065,"votes":[{"no":1,"votes":2594},{"no":2,"votes":18096},{"no":3,"votes":33375}],"villages":{}},
+          "龜山區":{"name":"龜山區","votes_total":94908,"votes":[{"no":1,"votes":4810},{"no":2,"votes":35968},{"no":3,"votes":54130}],"villages":{}},
+          "八德區":{"name":"八德區","votes_total":120119,"votes":[{"no":1,"votes":5630},{"no":2,"votes":50043},{"no":3,"votes":64446}],"villages":{}},
+          "龍潭區":{"name":"龍潭區","votes_total":73323,"votes":[{"no":1,"votes":3468},{"no":2,"votes":34250},{"no":3,"votes":35605}],"villages":{}},
+          "平鎮區":{"name":"平鎮區","votes_total":135009,"votes":[{"no":1,"votes":6637},{"no":2,"votes":57200},{"no":3,"votes":71172}],"villages":{}},
+          "新屋區":{"name":"新屋區","votes_total":30720,"votes":[{"no":1,"votes":1392},{"no":2,"votes":10891},{"no":3,"votes":18437}],"villages":{}},
+          "觀音區":{"name":"觀音區","votes_total":39355,"votes":[{"no":1,"votes":1913},{"no":2,"votes":12106},{"no":3,"votes":25336}],"villages":{}},
+          "復興區":{"name":"復興區","votes_total":6314,"votes":[{"no":1,"votes":233},{"no":2,"votes":4043},{"no":3,"votes":2038}],"villages":{}}
+        }
       },
       "hsinchu_city":{
         "id":"hsinchu_city",
@@ -80,7 +227,12 @@
         "name": "新竹市",
         "map_d":"M248.421 129.401C245.502 128.39 244.379 125.36 245.951 122.778L253.138 110.319C254.71 107.626 258.191 106.616 260.998 107.962L271.329 113.126C274.136 114.472 275.259 117.952 274.023 120.758L269.42 130.635C268.072 133.441 264.703 134.9 261.784 133.89L248.421 129.401Z",
         "votes_total":261102,
-        "votes":[{"no":1,"votes":14103},{"no":2,"votes":102725},{"no":3,"votes":144274}]
+        "votes":[{"no":1,"votes":14103},{"no":2,"votes":102725},{"no":3,"votes":144274}],
+        "districts":{
+          "東區":{"name":"東區","votes_total":123214,"votes":[{"no":1,"votes":6914},{"no":2,"votes":50693},{"no":3,"votes":65607}],"villages":{}},
+          "北區":{"name":"北區","votes_total":90643,"votes":[{"no":1,"votes":4685},{"no":2,"votes":35256},{"no":3,"votes":50702}],"villages":{}},
+          "香山區":{"name":"香山區","votes_total":47245,"votes":[{"no":1,"votes":2504},{"no":2,"votes":16776},{"no":3,"votes":27965}],"villages":{}}
+        }
       },
       "hsinchu_county":{
         "id":"hsinchu_county",
@@ -88,7 +240,22 @@
         "name": "新竹縣",
         "map_d":"M278.153 139.634C275.304 138.643 273.989 135.56 275.304 132.808L282.098 117.943C283.413 115.191 282.208 111.888 279.468 110.456L264.016 102.639C261.276 101.317 260.29 98.0143 261.824 95.3718L270.372 80.3975C271.906 77.7549 274.865 77.3145 277.057 79.4065L345.002 143.928C347.194 146.02 348.947 150.204 348.947 153.177V158.242C348.947 161.325 346.646 162.976 343.797 161.985L278.153 139.634Z",
         "votes_total":325039,
-        "votes":[{"no":1,"votes":18435},{"no":2,"votes":154224},{"no":3,"votes":152380}]
+        "votes":[{"no":1,"votes":18435},{"no":2,"votes":154224},{"no":3,"votes":152380}],
+        "districts":{
+          "竹北市":{"name":"竹北市","votes_total":106059,"votes":[{"no":1,"votes":6576},{"no":2,"votes":42591},{"no":3,"votes":56892}],"villages":{}},
+          "竹東鎮":{"name":"竹東鎮","votes_total":56539,"votes":[{"no":1,"votes":3202},{"no":2,"votes":29892},{"no":3,"votes":23445}],"villages":{}},
+          "新埔鎮":{"name":"新埔鎮","votes_total":20621,"votes":[{"no":1,"votes":993},{"no":2,"votes":9446},{"no":3,"votes":10182}],"villages":{}},
+          "關西鎮":{"name":"關西鎮","votes_total":17461,"votes":[{"no":1,"votes":772},{"no":2,"votes":9016},{"no":3,"votes":7673}],"villages":{}},
+          "湖口鄉":{"name":"湖口鄉","votes_total":44933,"votes":[{"no":1,"votes":2630},{"no":2,"votes":22354},{"no":3,"votes":19949}],"villages":{}},
+          "新豐鄉":{"name":"新豐鄉","votes_total":32564,"votes":[{"no":1,"votes":1866},{"no":2,"votes":14817},{"no":3,"votes":15881}],"villages":{}},
+          "芎林鄉":{"name":"芎林鄉","votes_total":12659,"votes":[{"no":1,"votes":712},{"no":2,"votes":6554},{"no":3,"votes":5393}],"villages":{}},
+          "橫山鄉":{"name":"橫山鄉","votes_total":8097,"votes":[{"no":1,"votes":389},{"no":2,"votes":4685},{"no":3,"votes":3023}],"villages":{}},
+          "北埔鄉":{"name":"北埔鄉","votes_total":5830,"votes":[{"no":1,"votes":287},{"no":2,"votes":3220},{"no":3,"votes":2323}],"villages":{}},
+          "寶山鄉":{"name":"寶山鄉","votes_total":9410,"votes":[{"no":1,"votes":563},{"no":2,"votes":4594},{"no":3,"votes":4253}],"villages":{}},
+          "峨眉鄉":{"name":"峨眉鄉","votes_total":3619,"votes":[{"no":1,"votes":144},{"no":2,"votes":1882},{"no":3,"votes":1593}],"villages":{}},
+          "尖石鄉":{"name":"尖石鄉","votes_total":4684,"votes":[{"no":1,"votes":208},{"no":2,"votes":3291},{"no":3,"votes":1185}],"villages":{}},
+          "五峰鄉":{"name":"五峰鄉","votes_total":2563,"votes":[{"no":1,"votes":93},{"no":2,"votes":1882},{"no":3,"votes":588}],"villages":{}}
+        }
       },
       "miaoli":{
         "id":"miaoli",
@@ -96,7 +263,27 @@
         "name": "苗栗縣",
         "map_d":"M218.149 180.465C215.074 180.465 213.866 178.284 215.403 175.776L236.928 138.701C238.466 136.084 241.98 134.775 244.836 135.756L261.858 141.536C264.714 142.517 269.436 144.044 272.291 145.025L343.786 169.233C346.641 170.215 348.947 173.159 348.947 175.776C348.947 178.393 346.421 180.574 343.456 180.574H218.149V180.465Z",
         "votes_total":326601,
-        "votes":[{"no":1,"votes":15222},{"no":2,"votes":164345},{"no":3,"votes":147034}]
+        "votes":[{"no":1,"votes":15222},{"no":2,"votes":164345},{"no":3,"votes":147034}],
+        "districts":{
+          "苗栗市":{"name":"苗栗市","votes_total":53270,"votes":[{"no":1,"votes":2366},{"no":2,"votes":30335},{"no":3,"votes":20569}],"villages":{}},
+          "苑裡鎮":{"name":"苑裡鎮","votes_total":27338,"votes":[{"no":1,"votes":1231},{"no":2,"votes":9349},{"no":3,"votes":16758}],"villages":{}},
+          "通霄鎮":{"name":"通霄鎮","votes_total":20240,"votes":[{"no":1,"votes":893},{"no":2,"votes":7952},{"no":3,"votes":11395}],"villages":{}},
+          "竹南鎮":{"name":"竹南鎮","votes_total":49752,"votes":[{"no":1,"votes":2718},{"no":2,"votes":21395},{"no":3,"votes":25639}],"villages":{}},
+          "頭份市":{"name":"頭份市","votes_total":60053,"votes":[{"no":1,"votes":3126},{"no":2,"votes":32116},{"no":3,"votes":24811}],"villages":{}},
+          "後龍鎮":{"name":"後龍鎮","votes_total":20860,"votes":[{"no":1,"votes":851},{"no":2,"votes":9175},{"no":3,"votes":10834}],"villages":{}},
+          "卓蘭鎮":{"name":"卓蘭鎮","votes_total":10265,"votes":[{"no":1,"votes":416},{"no":2,"votes":4363},{"no":3,"votes":5486}],"villages":{}},
+          "大湖鄉":{"name":"大湖鄉","votes_total":8500,"votes":[{"no":1,"votes":298},{"no":2,"votes":5103},{"no":3,"votes":3099}],"villages":{}},
+          "公館鄉":{"name":"公館鄉","votes_total":20114,"votes":[{"no":1,"votes":938},{"no":2,"votes":11043},{"no":3,"votes":8133}],"villages":{}},
+          "銅鑼鄉":{"name":"銅鑼鄉","votes_total":10857,"votes":[{"no":1,"votes":451},{"no":2,"votes":6292},{"no":3,"votes":4114}],"villages":{}},
+          "南庄鄉":{"name":"南庄鄉","votes_total":5803,"votes":[{"no":1,"votes":230},{"no":2,"votes":3744},{"no":3,"votes":1829}],"villages":{}},
+          "頭屋鄉":{"name":"頭屋鄉","votes_total":6791,"votes":[{"no":1,"votes":278},{"no":2,"votes":3971},{"no":3,"votes":2542}],"villages":{}},
+          "三義鄉":{"name":"三義鄉","votes_total":10204,"votes":[{"no":1,"votes":476},{"no":2,"votes":5756},{"no":3,"votes":3972}],"villages":{}},
+          "西湖鄉":{"name":"西湖鄉","votes_total":4337,"votes":[{"no":1,"votes":217},{"no":2,"votes":2618},{"no":3,"votes":1502}],"villages":{}},
+          "造橋鄉":{"name":"造橋鄉","votes_total":7743,"votes":[{"no":1,"votes":368},{"no":2,"votes":4180},{"no":3,"votes":3195}],"villages":{}},
+          "三灣鄉":{"name":"三灣鄉","votes_total":4172,"votes":[{"no":1,"votes":179},{"no":2,"votes":2473},{"no":3,"votes":1520}],"villages":{}},
+          "獅潭鄉":{"name":"獅潭鄉","votes_total":2685,"votes":[{"no":1,"votes":84},{"no":2,"votes":1737},{"no":3,"votes":864}],"villages":{}},
+          "泰安鄉":{"name":"泰安鄉","votes_total":3617,"votes":[{"no":1,"votes":102},{"no":2,"votes":2743},{"no":3,"votes":772}],"villages":{}}
+        }
       },
       "taichung":{
         "id":"taichung",
@@ -104,7 +291,38 @@
         "name": "台中市",
         "map_d":"M173.033 258.66C169.933 258.66 168.715 256.442 170.265 253.891L206.132 191.444C207.682 188.782 211.335 186.675 214.435 186.675H346.943C350.043 186.675 354.693 187.895 357.239 189.448L360.117 191.111C362.774 192.664 364.213 196.214 363.327 199.208L360.228 209.635C359.342 212.518 356.242 215.735 353.364 216.622L224.176 256.997C221.298 257.884 216.427 258.66 213.328 258.66H173.033Z",
         "votes_total":1698470,
-        "votes":[{"no":1,"votes":84800},{"no":2,"votes":646366},{"no":3,"votes":967304}]
+        "votes":[{"no":1,"votes":84800},{"no":2,"votes":646366},{"no":3,"votes":967304}],
+        "districts":{
+          "中區":{"name":"中區","votes_total":10058,"votes":[{"no":1,"votes":442},{"no":2,"votes":3823},{"no":3,"votes":5793}],"villages":{}},
+          "東區":{"name":"東區","votes_total":47800,"votes":[{"no":1,"votes":2251},{"no":2,"votes":17435},{"no":3,"votes":28114}],"villages":{}},
+          "南區":{"name":"南區","votes_total":77608,"votes":[{"no":1,"votes":4025},{"no":2,"votes":29485},{"no":3,"votes":44098}],"villages":{}},
+          "西區":{"name":"西區","votes_total":70072,"votes":[{"no":1,"votes":3366},{"no":2,"votes":26998},{"no":3,"votes":39708}],"villages":{}},
+          "北區":{"name":"北區","votes_total":90600,"votes":[{"no":1,"votes":4341},{"no":2,"votes":37248},{"no":3,"votes":49011}],"villages":{}},
+          "西屯區":{"name":"西屯區","votes_total":136407,"votes":[{"no":1,"votes":6950},{"no":2,"votes":54982},{"no":3,"votes":74475}],"villages":{}},
+          "南屯區":{"name":"南屯區","votes_total":102446,"votes":[{"no":1,"votes":5261},{"no":2,"votes":39433},{"no":3,"votes":57752}],"villages":{}},
+          "北屯區":{"name":"北屯區","votes_total":170919,"votes":[{"no":1,"votes":8468},{"no":2,"votes":69589},{"no":3,"votes":92862}],"villages":{}},
+          "豐原區":{"name":"豐原區","votes_total":102803,"votes":[{"no":1,"votes":4940},{"no":2,"votes":36221},{"no":3,"votes":61642}],"villages":{}},
+          "東勢區":{"name":"東勢區","votes_total":31011,"votes":[{"no":1,"votes":1337},{"no":2,"votes":14329},{"no":3,"votes":15345}],"villages":{}},
+          "大甲區":{"name":"大甲區","votes_total":44947,"votes":[{"no":1,"votes":2179},{"no":2,"votes":16136},{"no":3,"votes":26632}],"villages":{}},
+          "清水區":{"name":"清水區","votes_total":52114,"votes":[{"no":1,"votes":2497},{"no":2,"votes":17746},{"no":3,"votes":31871}],"villages":{}},
+          "沙鹿區":{"name":"沙鹿區","votes_total":55960,"votes":[{"no":1,"votes":3176},{"no":2,"votes":20587},{"no":3,"votes":32197}],"villages":{}},
+          "梧棲區":{"name":"梧棲區","votes_total":34140,"votes":[{"no":1,"votes":1723},{"no":2,"votes":11715},{"no":3,"votes":20702}],"villages":{}},
+          "后里區":{"name":"后里區","votes_total":33602,"votes":[{"no":1,"votes":1716},{"no":2,"votes":12882},{"no":3,"votes":19004}],"villages":{}},
+          "神岡區":{"name":"神岡區","votes_total":41063,"votes":[{"no":1,"votes":1930},{"no":2,"votes":13290},{"no":3,"votes":25843}],"villages":{}},
+          "潭子區":{"name":"潭子區","votes_total":67324,"votes":[{"no":1,"votes":3424},{"no":2,"votes":24947},{"no":3,"votes":38953}],"villages":{}},
+          "大雅區":{"name":"大雅區","votes_total":57607,"votes":[{"no":1,"votes":2881},{"no":2,"votes":21934},{"no":3,"votes":32792}],"villages":{}},
+          "新社區":{"name":"新社區","votes_total":15189,"votes":[{"no":1,"votes":668},{"no":2,"votes":6290},{"no":3,"votes":8231}],"villages":{}},
+          "石岡區":{"name":"石岡區","votes_total":9434,"votes":[{"no":1,"votes":444},{"no":2,"votes":4052},{"no":3,"votes":4938}],"villages":{}},
+          "外埔區":{"name":"外埔區","votes_total":19446,"votes":[{"no":1,"votes":961},{"no":2,"votes":7955},{"no":3,"votes":10530}],"villages":{}},
+          "大安區":{"name":"大安區","votes_total":11620,"votes":[{"no":1,"votes":498},{"no":2,"votes":4237},{"no":3,"votes":6885}],"villages":{}},
+          "烏日區":{"name":"烏日區","votes_total":46317,"votes":[{"no":1,"votes":2378},{"no":2,"votes":17101},{"no":3,"votes":26838}],"villages":{}},
+          "大肚區":{"name":"大肚區","votes_total":35119,"votes":[{"no":1,"votes":1842},{"no":2,"votes":13345},{"no":3,"votes":19932}],"villages":{}},
+          "龍井區":{"name":"龍井區","votes_total":46495,"votes":[{"no":1,"votes":2487},{"no":2,"votes":16827},{"no":3,"votes":27181}],"villages":{}},
+          "霧峰區":{"name":"霧峰區","votes_total":40899,"votes":[{"no":1,"votes":2132},{"no":2,"votes":15587},{"no":3,"votes":23180}],"villages":{}},
+          "太平區":{"name":"太平區","votes_total":114764,"votes":[{"no":1,"votes":5708},{"no":2,"votes":43313},{"no":3,"votes":65743}],"villages":{}},
+          "大里區":{"name":"大里區","votes_total":126258,"votes":[{"no":1,"votes":6541},{"no":2,"votes":44782},{"no":3,"votes":74935}],"villages":{}},
+          "和平區":{"name":"和平區","votes_total":6448,"votes":[{"no":1,"votes":234},{"no":2,"votes":4097},{"no":3,"votes":2117}],"villages":{}}
+        }
       },
       "changhua":{
         "id":"changhua",
@@ -112,7 +330,35 @@
         "name": "彰化縣",
         "map_d":"M147.375 303.696C144.307 303.696 143.102 301.534 144.636 299.049L161.289 270.628C162.822 268.034 166.438 265.981 169.505 265.981H210.479C213.547 265.981 215.957 268.466 215.957 271.384V298.401C215.957 301.426 213.437 303.804 210.479 303.804H147.375V303.696Z",
         "votes_total":763231,
-        "votes":[{"no":1,"votes":35060},{"no":2,"votes":291835},{"no":3,"votes":436336}]
+        "votes":[{"no":1,"votes":35060},{"no":2,"votes":291835},{"no":3,"votes":436336}],
+        "districts":{
+          "彰化市":{"name":"彰化市","votes_total":142619,"votes":[{"no":1,"votes":7159},{"no":2,"votes":56291},{"no":3,"votes":79169}],"villages":{}},
+          "鹿港鎮":{"name":"鹿港鎮","votes_total":50458,"votes":[{"no":1,"votes":2325},{"no":2,"votes":17172},{"no":3,"votes":30961}],"villages":{}},
+          "和美鎮":{"name":"和美鎮","votes_total":54017,"votes":[{"no":1,"votes":2682},{"no":2,"votes":20535},{"no":3,"votes":30800}],"villages":{}},
+          "線西鄉":{"name":"線西鄉","votes_total":9924,"votes":[{"no":1,"votes":577},{"no":2,"votes":4159},{"no":3,"votes":5188}],"villages":{}},
+          "伸港鄉":{"name":"伸港鄉","votes_total":21737,"votes":[{"no":1,"votes":1039},{"no":2,"votes":8491},{"no":3,"votes":12207}],"villages":{}},
+          "福興鄉":{"name":"福興鄉","votes_total":27765,"votes":[{"no":1,"votes":1216},{"no":2,"votes":9368},{"no":3,"votes":17181}],"villages":{}},
+          "秀水鄉":{"name":"秀水鄉","votes_total":23704,"votes":[{"no":1,"votes":1056},{"no":2,"votes":8559},{"no":3,"votes":14089}],"villages":{}},
+          "花壇鄉":{"name":"花壇鄉","votes_total":28304,"votes":[{"no":1,"votes":1352},{"no":2,"votes":11428},{"no":3,"votes":15524}],"villages":{}},
+          "芬園鄉":{"name":"芬園鄉","votes_total":14749,"votes":[{"no":1,"votes":682},{"no":2,"votes":5304},{"no":3,"votes":8763}],"villages":{}},
+          "員林市":{"name":"員林市","votes_total":74248,"votes":[{"no":1,"votes":3337},{"no":2,"votes":29289},{"no":3,"votes":41622}],"villages":{}},
+          "溪湖鎮":{"name":"溪湖鎮","votes_total":32019,"votes":[{"no":1,"votes":1434},{"no":2,"votes":12795},{"no":3,"votes":17790}],"villages":{}},
+          "田中鎮":{"name":"田中鎮","votes_total":25059,"votes":[{"no":1,"votes":982},{"no":2,"votes":10044},{"no":3,"votes":14033}],"villages":{}},
+          "大村鄉":{"name":"大村鄉","votes_total":22846,"votes":[{"no":1,"votes":1028},{"no":2,"votes":8498},{"no":3,"votes":13320}],"villages":{}},
+          "埔鹽鄉":{"name":"埔鹽鄉","votes_total":19851,"votes":[{"no":1,"votes":948},{"no":2,"votes":8768},{"no":3,"votes":10135}],"villages":{}},
+          "埔心鄉":{"name":"埔心鄉","votes_total":21510,"votes":[{"no":1,"votes":1017},{"no":2,"votes":7468},{"no":3,"votes":13025}],"villages":{}},
+          "永靖鄉":{"name":"永靖鄉","votes_total":22499,"votes":[{"no":1,"votes":976},{"no":2,"votes":8217},{"no":3,"votes":13306}],"villages":{}},
+          "社頭鄉":{"name":"社頭鄉","votes_total":26309,"votes":[{"no":1,"votes":1145},{"no":2,"votes":9454},{"no":3,"votes":15710}],"villages":{}},
+          "二水鄉":{"name":"二水鄉","votes_total":9545,"votes":[{"no":1,"votes":344},{"no":2,"votes":3844},{"no":3,"votes":5357}],"villages":{}},
+          "北斗鎮":{"name":"北斗鎮","votes_total":19792,"votes":[{"no":1,"votes":944},{"no":2,"votes":7537},{"no":3,"votes":11311}],"villages":{}},
+          "二林鎮":{"name":"二林鎮","votes_total":28817,"votes":[{"no":1,"votes":1212},{"no":2,"votes":12546},{"no":3,"votes":15059}],"villages":{}},
+          "田尾鄉":{"name":"田尾鄉","votes_total":16466,"votes":[{"no":1,"votes":710},{"no":2,"votes":6256},{"no":3,"votes":9500}],"villages":{}},
+          "埤頭鄉":{"name":"埤頭鄉","votes_total":17425,"votes":[{"no":1,"votes":786},{"no":2,"votes":6512},{"no":3,"votes":10127}],"villages":{}},
+          "芳苑鄉":{"name":"芳苑鄉","votes_total":18691,"votes":[{"no":1,"votes":761},{"no":2,"votes":6659},{"no":3,"votes":11271}],"villages":{}},
+          "大城鄉":{"name":"大城鄉","votes_total":8828,"votes":[{"no":1,"votes":320},{"no":2,"votes":3901},{"no":3,"votes":4607}],"villages":{}},
+          "竹塘鄉":{"name":"竹塘鄉","votes_total":8543,"votes":[{"no":1,"votes":286},{"no":2,"votes":2939},{"no":3,"votes":5318}],"villages":{}},
+          "溪州鄉":{"name":"溪州鄉","votes_total":17506,"votes":[{"no":1,"votes":742},{"no":2,"votes":5801},{"no":3,"votes":10963}],"villages":{}}
+        }
       },
       "yunlin":{
         "id":"yunlin",
@@ -120,7 +366,29 @@
         "name": "雲林縣",
         "map_d":"M123.011 345.177C119.909 345.177 118.691 342.973 120.242 340.438L134.532 315.863C136.083 313.218 139.739 311.124 142.841 311.124H210.418C213.52 311.124 215.957 313.659 215.957 316.634V339.777C215.957 342.863 213.409 345.287 210.418 345.287H123.011V345.177Z",
         "votes_total":399788,
-        "votes":[{"no":1,"votes":15331},{"no":2,"votes":138341},{"no":3,"votes":246116}]
+        "votes":[{"no":1,"votes":15331},{"no":2,"votes":138341},{"no":3,"votes":246116}],
+        "districts":{
+          "斗六市":{"name":"斗六市","votes_total":66122,"votes":[{"no":1,"votes":2890},{"no":2,"votes":25971},{"no":3,"votes":37261}],"villages":{}},
+          "斗南鎮":{"name":"斗南鎮","votes_total":27445,"votes":[{"no":1,"votes":1048},{"no":2,"votes":9595},{"no":3,"votes":16802}],"villages":{}},
+          "虎尾鎮":{"name":"虎尾鎮","votes_total":41520,"votes":[{"no":1,"votes":1877},{"no":2,"votes":15707},{"no":3,"votes":23936}],"villages":{}},
+          "西螺鎮":{"name":"西螺鎮","votes_total":26965,"votes":[{"no":1,"votes":806},{"no":2,"votes":8253},{"no":3,"votes":17906}],"villages":{}},
+          "土庫鎮":{"name":"土庫鎮","votes_total":16989,"votes":[{"no":1,"votes":673},{"no":2,"votes":5572},{"no":3,"votes":10744}],"villages":{}},
+          "北港鎮":{"name":"北港鎮","votes_total":23798,"votes":[{"no":1,"votes":855},{"no":2,"votes":7287},{"no":3,"votes":15656}],"villages":{}},
+          "古坑鄉":{"name":"古坑鄉","votes_total":19308,"votes":[{"no":1,"votes":660},{"no":2,"votes":6915},{"no":3,"votes":11733}],"villages":{}},
+          "大埤鄉":{"name":"大埤鄉","votes_total":11426,"votes":[{"no":1,"votes":424},{"no":2,"votes":3626},{"no":3,"votes":7376}],"villages":{}},
+          "莿桐鄉":{"name":"莿桐鄉","votes_total":17836,"votes":[{"no":1,"votes":657},{"no":2,"votes":5250},{"no":3,"votes":11929}],"villages":{}},
+          "林內鄉":{"name":"林內鄉","votes_total":10911,"votes":[{"no":1,"votes":433},{"no":2,"votes":3883},{"no":3,"votes":6595}],"villages":{}},
+          "二崙鄉":{"name":"二崙鄉","votes_total":15665,"votes":[{"no":1,"votes":411},{"no":2,"votes":4398},{"no":3,"votes":10856}],"villages":{}},
+          "崙背鄉":{"name":"崙背鄉","votes_total":14043,"votes":[{"no":1,"votes":473},{"no":2,"votes":4676},{"no":3,"votes":8894}],"villages":{}},
+          "麥寮鄉":{"name":"麥寮鄉","votes_total":23836,"votes":[{"no":1,"votes":1134},{"no":2,"votes":9110},{"no":3,"votes":13592}],"villages":{}},
+          "東勢鄉":{"name":"東勢鄉","votes_total":8355,"votes":[{"no":1,"votes":315},{"no":2,"votes":3097},{"no":3,"votes":4943}],"villages":{}},
+          "褒忠鄉":{"name":"褒忠鄉","votes_total":7663,"votes":[{"no":1,"votes":295},{"no":2,"votes":2553},{"no":3,"votes":4815}],"villages":{}},
+          "臺西鄉":{"name":"臺西鄉","votes_total":12653,"votes":[{"no":1,"votes":502},{"no":2,"votes":5340},{"no":3,"votes":6811}],"villages":{}},
+          "元長鄉":{"name":"元長鄉","votes_total":14495,"votes":[{"no":1,"votes":507},{"no":2,"votes":4643},{"no":3,"votes":9345}],"villages":{}},
+          "四湖鄉":{"name":"四湖鄉","votes_total":11918,"votes":[{"no":1,"votes":387},{"no":2,"votes":4382},{"no":3,"votes":7149}],"villages":{}},
+          "口湖鄉":{"name":"口湖鄉","votes_total":14861,"votes":[{"no":1,"votes":521},{"no":2,"votes":4478},{"no":3,"votes":9862}],"villages":{}},
+          "水林鄉":{"name":"水林鄉","votes_total":13979,"votes":[{"no":1,"votes":463},{"no":2,"votes":3605},{"no":3,"votes":9911}],"villages":{}}
+        }
       },
       "chiayi_city":{
         "id":"chiayi_city",
@@ -128,7 +396,11 @@
         "name": "嘉義市",
         "map_d":"M159.294 390.431C156.179 390.431 153.732 387.813 153.732 384.741V374.158C153.732 370.972 156.291 368.469 159.294 368.469H185.993C188.996 368.469 191.555 371.086 191.555 374.158V384.741C191.555 387.927 188.996 390.431 185.993 390.431H159.294Z",
         "votes_total":161738,
-        "votes":[{"no":1,"votes":6204},{"no":2,"votes":56269},{"no":3,"votes":99265}]
+        "votes":[{"no":1,"votes":6204},{"no":2,"votes":56269},{"no":3,"votes":99265}],
+        "districts":{
+          "東區":{"name":"東區","votes_total":73530,"votes":[{"no":1,"votes":2885},{"no":2,"votes":26977},{"no":3,"votes":43668}],"villages":{}},
+          "西區":{"name":"西區","votes_total":88208,"votes":[{"no":1,"votes":3319},{"no":2,"votes":29292},{"no":3,"votes":55597}],"villages":{}}
+        }
       },
       "chiayi_county":{
         "id":"chiayi_county",
@@ -136,8 +408,27 @@
         "name": "嘉義縣",
         "map_d":"M123.301 408.732C120.213 408.732 117.677 406.306 117.567 403.218L115.913 356.901C115.803 353.924 118.229 351.388 121.206 351.388H212.954C216.042 351.388 220.673 352.49 223.32 353.924L266.106 376.2C268.753 377.634 269.194 380.501 267.099 382.596L244.934 404.872C242.838 406.968 238.538 408.732 235.56 408.732H123.301ZM147.01 390.757C147.01 393.845 149.546 396.271 152.524 396.271H192.223C195.31 396.271 197.736 393.734 197.736 390.757V367.268C197.736 364.18 195.2 361.754 192.223 361.754H152.524C149.436 361.754 147.01 364.29 147.01 367.268V390.757Z",
         "votes_total":307290,
-        "votes":[{"no":1,"votes":11138},{"no":2,"votes":98810},{"no":3,"votes":197342}]
-
+        "votes":[{"no":1,"votes":11138},{"no":2,"votes":98810},{"no":3,"votes":197342}],
+        "districts":{
+          "太保市":{"name":"太保市","votes_total":22807,"votes":[{"no":1,"votes":905},{"no":2,"votes":6934},{"no":3,"votes":14968}],"villages":{}},
+          "朴子市":{"name":"朴子市","votes_total":24616,"votes":[{"no":1,"votes":823},{"no":2,"votes":7657},{"no":3,"votes":16136}],"villages":{}},
+          "布袋鎮":{"name":"布袋鎮","votes_total":15990,"votes":[{"no":1,"votes":493},{"no":2,"votes":5408},{"no":3,"votes":10089}],"villages":{}},
+          "大林鎮":{"name":"大林鎮","votes_total":18955,"votes":[{"no":1,"votes":720},{"no":2,"votes":6396},{"no":3,"votes":11839}],"villages":{}},
+          "民雄鄉":{"name":"民雄鄉","votes_total":43705,"votes":[{"no":1,"votes":1773},{"no":2,"votes":13576},{"no":3,"votes":28356}],"villages":{}},
+          "溪口鄉":{"name":"溪口鄉","votes_total":8975,"votes":[{"no":1,"votes":304},{"no":2,"votes":2305},{"no":3,"votes":6366}],"villages":{}},
+          "新港鄉":{"name":"新港鄉","votes_total":19238,"votes":[{"no":1,"votes":628},{"no":2,"votes":4878},{"no":3,"votes":13732}],"villages":{}},
+          "六腳鄉":{"name":"六腳鄉","votes_total":13745,"votes":[{"no":1,"votes":412},{"no":2,"votes":3666},{"no":3,"votes":9667}],"villages":{}},
+          "東石鄉":{"name":"東石鄉","votes_total":14186,"votes":[{"no":1,"votes":512},{"no":2,"votes":4731},{"no":3,"votes":8943}],"villages":{}},
+          "義竹鄉":{"name":"義竹鄉","votes_total":11615,"votes":[{"no":1,"votes":384},{"no":2,"votes":3616},{"no":3,"votes":7615}],"villages":{}},
+          "鹿草鄉":{"name":"鹿草鄉","votes_total":9252,"votes":[{"no":1,"votes":251},{"no":2,"votes":2725},{"no":3,"votes":6276}],"villages":{}},
+          "水上鄉":{"name":"水上鄉","votes_total":31607,"votes":[{"no":1,"votes":1163},{"no":2,"votes":10433},{"no":3,"votes":20011}],"villages":{}},
+          "中埔鄉":{"name":"中埔鄉","votes_total":27064,"votes":[{"no":1,"votes":985},{"no":2,"votes":9132},{"no":3,"votes":16947}],"villages":{}},
+          "竹崎鄉":{"name":"竹崎鄉","votes_total":21600,"votes":[{"no":1,"votes":846},{"no":2,"votes":7404},{"no":3,"votes":13350}],"villages":{}},
+          "梅山鄉":{"name":"梅山鄉","votes_total":11716,"votes":[{"no":1,"votes":484},{"no":2,"votes":4306},{"no":3,"votes":6926}],"villages":{}},
+          "番路鄉":{"name":"番路鄉","votes_total":6946,"votes":[{"no":1,"votes":273},{"no":2,"votes":2707},{"no":3,"votes":3966}],"villages":{}},
+          "大埔鄉":{"name":"大埔鄉","votes_total":2230,"votes":[{"no":1,"votes":76},{"no":2,"votes":930},{"no":3,"votes":1224}],"villages":{}},
+          "阿里山鄉":{"name":"阿里山鄉","votes_total":3043,"votes":[{"no":1,"votes":106},{"no":2,"votes":2006},{"no":3,"votes":931}],"villages":{}}
+        }
       },
       "tainan":{
         "id":"tainan",
@@ -145,7 +436,46 @@
         "name": "台南市",
         "map_d":"M126.284 486.818C123.2 486.818 120.666 484.423 120.556 481.375L118.353 421.496C118.243 418.557 120.666 416.053 123.64 416.053H228.954C232.038 416.053 232.699 417.795 230.606 419.863L166.823 483.008C164.73 485.076 160.434 486.818 157.46 486.818H126.284Z",
         "votes_total":1167248,
-        "votes":[{"no":1,"votes":41075},{"no":2,"votes":339702},{"no":3,"votes":786471}]
+        "votes":[{"no":1,"votes":41075},{"no":2,"votes":339702},{"no":3,"votes":786471}],
+        "districts":{
+          "新營區":{"name":"新營區","votes_total":46206,"votes":[{"no":1,"votes":1720},{"no":2,"votes":15517},{"no":3,"votes":28969}],"villages":{}},
+          "鹽水區":{"name":"鹽水區","votes_total":15547,"votes":[{"no":1,"votes":427},{"no":2,"votes":4021},{"no":3,"votes":11099}],"villages":{}},
+          "白河區":{"name":"白河區","votes_total":16896,"votes":[{"no":1,"votes":454},{"no":2,"votes":4611},{"no":3,"votes":11831}],"villages":{}},
+          "柳營區":{"name":"柳營區","votes_total":13522,"votes":[{"no":1,"votes":487},{"no":2,"votes":3578},{"no":3,"votes":9457}],"villages":{}},
+          "後壁區":{"name":"後壁區","votes_total":14604,"votes":[{"no":1,"votes":447},{"no":2,"votes":3822},{"no":3,"votes":10335}],"villages":{}},
+          "東山區":{"name":"東山區","votes_total":11934,"votes":[{"no":1,"votes":356},{"no":2,"votes":3638},{"no":3,"votes":7940}],"villages":{}},
+          "麻豆區":{"name":"麻豆區","votes_total":28320,"votes":[{"no":1,"votes":767},{"no":2,"votes":5883},{"no":3,"votes":21670}],"villages":{}},
+          "下營區":{"name":"下營區","votes_total":14754,"votes":[{"no":1,"votes":434},{"no":2,"votes":3987},{"no":3,"votes":10333}],"villages":{}},
+          "六甲區":{"name":"六甲區","votes_total":13371,"votes":[{"no":1,"votes":442},{"no":2,"votes":3243},{"no":3,"votes":9686}],"villages":{}},
+          "官田區":{"name":"官田區","votes_total":13710,"votes":[{"no":1,"votes":384},{"no":2,"votes":3186},{"no":3,"votes":10140}],"villages":{}},
+          "大內區":{"name":"大內區","votes_total":6084,"votes":[{"no":1,"votes":192},{"no":2,"votes":1643},{"no":3,"votes":4249}],"villages":{}},
+          "佳里區":{"name":"佳里區","votes_total":36728,"votes":[{"no":1,"votes":1171},{"no":2,"votes":9486},{"no":3,"votes":26071}],"villages":{}},
+          "學甲區":{"name":"學甲區","votes_total":15884,"votes":[{"no":1,"votes":446},{"no":2,"votes":3581},{"no":3,"votes":11857}],"villages":{}},
+          "西港區":{"name":"西港區","votes_total":15733,"votes":[{"no":1,"votes":452},{"no":2,"votes":3445},{"no":3,"votes":11836}],"villages":{}},
+          "七股區":{"name":"七股區","votes_total":13799,"votes":[{"no":1,"votes":397},{"no":2,"votes":3173},{"no":3,"votes":10229}],"villages":{}},
+          "將軍區":{"name":"將軍區","votes_total":11955,"votes":[{"no":1,"votes":274},{"no":2,"votes":2525},{"no":3,"votes":9156}],"villages":{}},
+          "北門區":{"name":"北門區","votes_total":6418,"votes":[{"no":1,"votes":147},{"no":2,"votes":1688},{"no":3,"votes":4583}],"villages":{}},
+          "新化區":{"name":"新化區","votes_total":27538,"votes":[{"no":1,"votes":1000},{"no":2,"votes":8446},{"no":3,"votes":18092}],"villages":{}},
+          "善化區":{"name":"善化區","votes_total":30117,"votes":[{"no":1,"votes":1021},{"no":2,"votes":7582},{"no":3,"votes":21514}],"villages":{}},
+          "新市區":{"name":"新市區","votes_total":22921,"votes":[{"no":1,"votes":774},{"no":2,"votes":5612},{"no":3,"votes":16535}],"villages":{}},
+          "安定區":{"name":"安定區","votes_total":19301,"votes":[{"no":1,"votes":600},{"no":2,"votes":4706},{"no":3,"votes":13995}],"villages":{}},
+          "山上區":{"name":"山上區","votes_total":4572,"votes":[{"no":1,"votes":139},{"no":2,"votes":1285},{"no":3,"votes":3148}],"villages":{}},
+          "玉井區":{"name":"玉井區","votes_total":8377,"votes":[{"no":1,"votes":280},{"no":2,"votes":3452},{"no":3,"votes":4645}],"villages":{}},
+          "楠西區":{"name":"楠西區","votes_total":5661,"votes":[{"no":1,"votes":167},{"no":2,"votes":2769},{"no":3,"votes":2725}],"villages":{}},
+          "南化區":{"name":"南化區","votes_total":5195,"votes":[{"no":1,"votes":162},{"no":2,"votes":2136},{"no":3,"votes":2897}],"villages":{}},
+          "左鎮區":{"name":"左鎮區","votes_total":2858,"votes":[{"no":1,"votes":70},{"no":2,"votes":927},{"no":3,"votes":1861}],"villages":{}},
+          "仁德區":{"name":"仁德區","votes_total":48845,"votes":[{"no":1,"votes":1836},{"no":2,"votes":14785},{"no":3,"votes":32224}],"villages":{}},
+          "歸仁區":{"name":"歸仁區","votes_total":43190,"votes":[{"no":1,"votes":1455},{"no":2,"votes":11285},{"no":3,"votes":30450}],"villages":{}},
+          "關廟區":{"name":"關廟區","votes_total":22591,"votes":[{"no":1,"votes":729},{"no":2,"votes":6082},{"no":3,"votes":15780}],"villages":{}},
+          "龍崎區":{"name":"龍崎區","votes_total":2665,"votes":[{"no":1,"votes":96},{"no":2,"votes":876},{"no":3,"votes":1693}],"villages":{}},
+          "永康區":{"name":"永康區","votes_total":143872,"votes":[{"no":1,"votes":5562},{"no":2,"votes":44565},{"no":3,"votes":93745}],"villages":{}},
+          "東區":{"name":"東區","votes_total":114545,"votes":[{"no":1,"votes":4461},{"no":2,"votes":41044},{"no":3,"votes":69040}],"villages":{}},
+          "南區":{"name":"南區","votes_total":81417,"votes":[{"no":1,"votes":2790},{"no":2,"votes":23551},{"no":3,"votes":55076}],"villages":{}},
+          "北區":{"name":"北區","votes_total":81831,"votes":[{"no":1,"votes":3215},{"no":2,"votes":26684},{"no":3,"votes":51932}],"villages":{}},
+          "安南區":{"name":"安南區","votes_total":117827,"votes":[{"no":1,"votes":4307},{"no":2,"votes":29236},{"no":3,"votes":84284}],"villages":{}},
+          "安平區":{"name":"安平區","votes_total":40529,"votes":[{"no":1,"votes":1523},{"no":2,"votes":12944},{"no":3,"votes":26062}],"villages":{}},
+          "中西區":{"name":"中西區","votes_total":47931,"votes":[{"no":1,"votes":1891},{"no":2,"votes":14708},{"no":3,"votes":31332}],"villages":{}}
+        }
       },
       "kaohsiung":{
         "id":"kaohsiung",
@@ -153,7 +483,47 @@
         "name": "高雄市",
         "map_d":"M125.326 537.183C123.446 534.756 121.899 530.344 121.788 527.256L120.793 499.793C120.683 496.815 123.115 494.279 126.099 494.279H159.926C163.022 494.279 167.222 492.514 169.323 490.418L274.231 385.75C276.331 383.655 280.09 381.89 282.411 381.89C284.733 381.89 286.723 384.427 286.723 387.405V411.007C286.723 414.096 285.728 418.838 284.512 421.595L247.037 504.867C245.821 507.624 242.283 509.94 239.298 509.94H191.432C188.337 509.94 185.241 512.367 184.357 515.234L164.569 580.748C163.685 583.616 161.474 584.057 159.595 581.631L125.326 537.183Z",
         "votes_total":1763826,
-        "votes":[{"no":1,"votes":55309},{"no":2,"votes":610896},{"no":3,"votes":1097621}]
+        "votes":[{"no":1,"votes":55309},{"no":2,"votes":610896},{"no":3,"votes":1097621}],
+        "districts":{
+          "鹽埕區":{"name":"鹽埕區","votes_total":16150,"votes":[{"no":1,"votes":455},{"no":2,"votes":5270},{"no":3,"votes":10425}],"villages":{}},
+          "鼓山區":{"name":"鼓山區","votes_total":87010,"votes":[{"no":1,"votes":2717},{"no":2,"votes":33270},{"no":3,"votes":51023}],"villages":{}},
+          "左營區":{"name":"左營區","votes_total":121491,"votes":[{"no":1,"votes":4098},{"no":2,"votes":50728},{"no":3,"votes":66665}],"villages":{}},
+          "楠梓區":{"name":"楠梓區","votes_total":116491,"votes":[{"no":1,"votes":3938},{"no":2,"votes":41889},{"no":3,"votes":70664}],"villages":{}},
+          "三民區":{"name":"三民區","votes_total":218543,"votes":[{"no":1,"votes":6910},{"no":2,"votes":73585},{"no":3,"votes":138048}],"villages":{}},
+          "新興區":{"name":"新興區","votes_total":33105,"votes":[{"no":1,"votes":1072},{"no":2,"votes":12034},{"no":3,"votes":19999}],"villages":{}},
+          "前金區":{"name":"前金區","votes_total":18024,"votes":[{"no":1,"votes":640},{"no":2,"votes":6641},{"no":3,"votes":10743}],"villages":{}},
+          "苓雅區":{"name":"苓雅區","votes_total":109932,"votes":[{"no":1,"votes":3452},{"no":2,"votes":40676},{"no":3,"votes":65804}],"villages":{}},
+          "前鎮區":{"name":"前鎮區","votes_total":121798,"votes":[{"no":1,"votes":3644},{"no":2,"votes":41166},{"no":3,"votes":76988}],"villages":{}},
+          "旗津區":{"name":"旗津區","votes_total":17889,"votes":[{"no":1,"votes":427},{"no":2,"votes":4817},{"no":3,"votes":12645}],"villages":{}},
+          "小港區":{"name":"小港區","votes_total":98741,"votes":[{"no":1,"votes":2860},{"no":2,"votes":31074},{"no":3,"votes":64807}],"villages":{}},
+          "鳳山區":{"name":"鳳山區","votes_total":227899,"votes":[{"no":1,"votes":7295},{"no":2,"votes":82432},{"no":3,"votes":138172}],"villages":{}},
+          "林園區":{"name":"林園區","votes_total":43388,"votes":[{"no":1,"votes":1259},{"no":2,"votes":12247},{"no":3,"votes":29882}],"villages":{}},
+          "大寮區":{"name":"大寮區","votes_total":71816,"votes":[{"no":1,"votes":2164},{"no":2,"votes":23000},{"no":3,"votes":46652}],"villages":{}},
+          "大樹區":{"name":"大樹區","votes_total":27507,"votes":[{"no":1,"votes":724},{"no":2,"votes":8218},{"no":3,"votes":18565}],"villages":{}},
+          "大社區":{"name":"大社區","votes_total":22640,"votes":[{"no":1,"votes":649},{"no":2,"votes":6541},{"no":3,"votes":15450}],"villages":{}},
+          "仁武區":{"name":"仁武區","votes_total":56750,"votes":[{"no":1,"votes":1810},{"no":2,"votes":17726},{"no":3,"votes":37214}],"villages":{}},
+          "鳥松區":{"name":"鳥松區","votes_total":30214,"votes":[{"no":1,"votes":967},{"no":2,"votes":10100},{"no":3,"votes":19147}],"villages":{}},
+          "岡山區":{"name":"岡山區","votes_total":61961,"votes":[{"no":1,"votes":2130},{"no":2,"votes":22257},{"no":3,"votes":37574}],"villages":{}},
+          "橋頭區":{"name":"橋頭區","votes_total":25790,"votes":[{"no":1,"votes":800},{"no":2,"votes":6913},{"no":3,"votes":18077}],"villages":{}},
+          "燕巢區":{"name":"燕巢區","votes_total":19197,"votes":[{"no":1,"votes":557},{"no":2,"votes":6054},{"no":3,"votes":12586}],"villages":{}},
+          "田寮區":{"name":"田寮區","votes_total":4802,"votes":[{"no":1,"votes":124},{"no":2,"votes":1397},{"no":3,"votes":3281}],"villages":{}},
+          "阿蓮區":{"name":"阿蓮區","votes_total":18139,"votes":[{"no":1,"votes":530},{"no":2,"votes":5051},{"no":3,"votes":12558}],"villages":{}},
+          "路竹區":{"name":"路竹區","votes_total":32602,"votes":[{"no":1,"votes":1266},{"no":2,"votes":10062},{"no":3,"votes":21274}],"villages":{}},
+          "湖內區":{"name":"湖內區","votes_total":19005,"votes":[{"no":1,"votes":665},{"no":2,"votes":5553},{"no":3,"votes":12787}],"villages":{}},
+          "茄萣區":{"name":"茄萣區","votes_total":19017,"votes":[{"no":1,"votes":568},{"no":2,"votes":5458},{"no":3,"votes":12991}],"villages":{}},
+          "永安區":{"name":"永安區","votes_total":8925,"votes":[{"no":1,"votes":293},{"no":2,"votes":2688},{"no":3,"votes":5944}],"villages":{}},
+          "彌陀區":{"name":"彌陀區","votes_total":12466,"votes":[{"no":1,"votes":453},{"no":2,"votes":4151},{"no":3,"votes":7862}],"villages":{}},
+          "梓官區":{"name":"梓官區","votes_total":23478,"votes":[{"no":1,"votes":716},{"no":2,"votes":6471},{"no":3,"votes":16291}],"villages":{}},
+          "旗山區":{"name":"旗山區","votes_total":22969,"votes":[{"no":1,"votes":722},{"no":2,"votes":7962},{"no":3,"votes":14285}],"villages":{}},
+          "美濃區":{"name":"美濃區","votes_total":24760,"votes":[{"no":1,"votes":607},{"no":2,"votes":11146},{"no":3,"votes":13007}],"villages":{}},
+          "六龜區":{"name":"六龜區","votes_total":7013,"votes":[{"no":1,"votes":191},{"no":2,"votes":2705},{"no":3,"votes":4117}],"villages":{}},
+          "甲仙區":{"name":"甲仙區","votes_total":3549,"votes":[{"no":1,"votes":96},{"no":2,"votes":1698},{"no":3,"votes":1755}],"villages":{}},
+          "杉林區":{"name":"杉林區","votes_total":6693,"votes":[{"no":1,"votes":154},{"no":2,"votes":2820},{"no":3,"votes":3719}],"villages":{}},
+          "內門區":{"name":"內門區","votes_total":9023,"votes":[{"no":1,"votes":245},{"no":2,"votes":3400},{"no":3,"votes":5378}],"villages":{}},
+          "茂林區":{"name":"茂林區","votes_total":1164,"votes":[{"no":1,"votes":20},{"no":2,"votes":877},{"no":3,"votes":267}],"villages":{}},
+          "桃源區":{"name":"桃源區","votes_total":2283,"votes":[{"no":1,"votes":64},{"no":2,"votes":1674},{"no":3,"votes":545}],"villages":{}},
+          "那瑪夏區":{"name":"那瑪夏區","votes_total":1602,"votes":[{"no":1,"votes":27},{"no":2,"votes":1145},{"no":3,"votes":430}],"villages":{}}
+        }
       },
       "pingtung":{
         "id":"pingtung",
@@ -161,7 +531,42 @@
         "name": "屏東縣",
         "map_d":"M226.665 699.005C223.569 699.005 220.474 696.579 219.59 693.713L205.441 643.328C204.667 640.462 202.457 636.052 200.577 633.627L171.727 596.252C169.848 593.826 169.074 589.527 169.958 586.66L189.634 521.392C190.518 518.526 193.724 516.1 196.709 516.1H238.492C241.587 516.1 244.019 518.636 244.019 521.613V693.602C244.019 696.689 241.477 699.115 238.492 699.115H226.665V699.005Z M134.085 632.92C137.858 636.878 137.355 643.309 133.33 646.772L124.022 654.934C119.997 658.644 113.457 658.15 109.935 654.192C106.161 650.235 106.664 643.804 110.689 640.341L119.997 632.178C124.022 628.468 130.563 628.715 134.085 632.92Z",
         "votes_total":511050,
-        "votes":[{"no":1,"votes":14021},{"no":2,"votes":179353},{"no":3,"votes":317676}]
+        "votes":[{"no":1,"votes":14021},{"no":2,"votes":179353},{"no":3,"votes":317676}],
+        "districts":{
+          "屏東市":{"name":"屏東市","votes_total":124110,"votes":[{"no":1,"votes":3963},{"no":2,"votes":48076},{"no":3,"votes":72071}],"villages":{}},
+            "潮州鎮":{"name":"潮州鎮","votes_total":33686,"votes":[{"no":1,"votes":950},{"no":2,"votes":11543},{"no":3,"votes":21193}],"villages":{}},
+            "東港鎮":{"name":"東港鎮","votes_total":28711,"votes":[{"no":1,"votes":754},{"no":2,"votes":8169},{"no":3,"votes":19788}],"villages":{}},
+            "恆春鎮":{"name":"恆春鎮","votes_total":16277,"votes":[{"no":1,"votes":384},{"no":2,"votes":6620},{"no":3,"votes":9273}],"villages":{}},
+            "萬丹鄉":{"name":"萬丹鄉","votes_total":32554,"votes":[{"no":1,"votes":870},{"no":2,"votes":9335},{"no":3,"votes":22349}],"villages":{}},
+            "長治鄉":{"name":"長治鄉","votes_total":19303,"votes":[{"no":1,"votes":557},{"no":2,"votes":6493},{"no":3,"votes":12253}],"villages":{}},
+            "麟洛鄉":{"name":"麟洛鄉","votes_total":7660,"votes":[{"no":1,"votes":201},{"no":2,"votes":2256},{"no":3,"votes":5203}],"villages":{}},
+            "九如鄉":{"name":"九如鄉","votes_total":14215,"votes":[{"no":1,"votes":360},{"no":2,"votes":3509},{"no":3,"votes":10346}],"villages":{}},
+            "里港鄉":{"name":"里港鄉","votes_total":16582,"votes":[{"no":1,"votes":405},{"no":2,"votes":4596},{"no":3,"votes":11581}],"villages":{}},
+            "鹽埔鄉":{"name":"鹽埔鄉","votes_total":15650,"votes":[{"no":1,"votes":413},{"no":2,"votes":5597},{"no":3,"votes":9640}],"villages":{}},
+            "高樹鄉":{"name":"高樹鄉","votes_total":15089,"votes":[{"no":1,"votes":332},{"no":2,"votes":3972},{"no":3,"votes":10785}],"villages":{}},
+            "萬巒鄉":{"name":"萬巒鄉","votes_total":12963,"votes":[{"no":1,"votes":252},{"no":2,"votes":3684},{"no":3,"votes":9027}],"villages":{}},
+            "內埔鄉":{"name":"內埔鄉","votes_total":33795,"votes":[{"no":1,"votes":948},{"no":2,"votes":10779},{"no":3,"votes":22068}],"villages":{}},
+            "竹田鄉":{"name":"竹田鄉","votes_total":11338,"votes":[{"no":1,"votes":252},{"no":2,"votes":3357},{"no":3,"votes":7729}],"villages":{}},
+            "新埤鄉":{"name":"新埤鄉","votes_total":6240,"votes":[{"no":1,"votes":173},{"no":2,"votes":2154},{"no":3,"votes":3913}],"villages":{}},
+            "枋寮鄉":{"name":"枋寮鄉","votes_total":14984,"votes":[{"no":1,"votes":373},{"no":2,"votes":4990},{"no":3,"votes":9621}],"villages":{}},
+            "新園鄉":{"name":"新園鄉","votes_total":22732,"votes":[{"no":1,"votes":601},{"no":2,"votes":5670},{"no":3,"votes":16461}],"villages":{}},
+            "崁頂鄉":{"name":"崁頂鄉","votes_total":8882,"votes":[{"no":1,"votes":245},{"no":2,"votes":2476},{"no":3,"votes":6161}],"villages":{}},
+            "林邊鄉":{"name":"林邊鄉","votes_total":11453,"votes":[{"no":1,"votes":264},{"no":2,"votes":3235},{"no":3,"votes":7954}],"villages":{}},
+            "南州鄉":{"name":"南州鄉","votes_total":6974,"votes":[{"no":1,"votes":185},{"no":2,"votes":2067},{"no":3,"votes":4722}],"villages":{}},
+            "佳冬鄉":{"name":"佳冬鄉","votes_total":12150,"votes":[{"no":1,"votes":219},{"no":2,"votes":3523},{"no":3,"votes":8408}],"villages":{}},
+            "琉球鄉":{"name":"琉球鄉","votes_total":6250,"votes":[{"no":1,"votes":184},{"no":2,"votes":3196},{"no":3,"votes":2870}],"villages":{}},
+            "車城鄉":{"name":"車城鄉","votes_total":4770,"votes":[{"no":1,"votes":113},{"no":2,"votes":1616},{"no":3,"votes":3041}],"villages":{}},
+            "滿州鄉":{"name":"滿州鄉","votes_total":4078,"votes":[{"no":1,"votes":118},{"no":2,"votes":1559},{"no":3,"votes":2401}],"villages":{}},
+            "枋山鄉":{"name":"枋山鄉","votes_total":3213,"votes":[{"no":1,"votes":53},{"no":2,"votes":1036},{"no":3,"votes":2124}],"villages":{}},
+            "三地門鄉":{"name":"三地門鄉","votes_total":4728,"votes":[{"no":1,"votes":141},{"no":2,"votes":3348},{"no":3,"votes":1239}],"villages":{}},
+            "霧臺鄉":{"name":"霧臺鄉","votes_total":2234,"votes":[{"no":1,"votes":69},{"no":2,"votes":1496},{"no":3,"votes":669}],"villages":{}},
+            "瑪家鄉":{"name":"瑪家鄉","votes_total":4231,"votes":[{"no":1,"votes":130},{"no":2,"votes":2989},{"no":3,"votes":1112}],"villages":{}},
+            "泰武鄉":{"name":"泰武鄉","votes_total":3284,"votes":[{"no":1,"votes":95},{"no":2,"votes":2392},{"no":3,"votes":797}],"villages":{}},
+            "來義鄉":{"name":"來義鄉","votes_total":4530,"votes":[{"no":1,"votes":154},{"no":2,"votes":3375},{"no":3,"votes":1001}],"villages":{}},
+            "春日鄉":{"name":"春日鄉","votes_total":2689,"votes":[{"no":1,"votes":80},{"no":2,"votes":2000},{"no":3,"votes":609}],"villages":{}},
+            "獅子鄉":{"name":"獅子鄉","votes_total":2944,"votes":[{"no":1,"votes":83},{"no":2,"votes":2239},{"no":3,"votes":622}],"villages":{}},
+            "牡丹鄉":{"name":"牡丹鄉","votes_total":2751,"votes":[{"no":1,"votes":100},{"no":2,"votes":2006},{"no":3,"votes":645}],"villages":{}}
+        }
       },
       "taitung":{
         "id":"taitung",
@@ -169,7 +574,25 @@
         "name": "台東縣",
         "map_d":"M250.341 518.835C250.341 515.736 251.339 510.977 252.559 508.211L289.374 426.202C290.594 423.435 293.699 422.55 296.249 424.21L344.042 455.198C346.593 456.858 347.258 460.289 345.595 462.835L253.225 601.065C251.561 603.611 250.12 603.168 250.12 600.18V518.835H250.341Z M420.933 522.933C420.933 527.228 418.078 530.742 414.589 530.742H411.416C407.927 530.742 405.072 527.228 405.072 522.933V509.268C405.072 504.973 407.927 501.459 411.416 501.459H414.589C418.078 501.459 420.933 504.973 420.933 509.268V522.933Z M371.057 622.797C369.921 625.237 366.892 626.335 364.367 625.237L349.473 618.527C346.948 617.429 345.812 614.5 346.948 612.06L351.24 603.154C352.376 600.713 355.405 599.615 357.93 600.713L372.824 607.424C375.349 608.522 376.485 611.45 375.349 613.89L371.057 622.797Z",
         "votes_total":115668,
-        "votes":[{"no":1,"votes":4163},{"no":2,"votes":67413},{"no":3,"votes":44092}]
+        "votes":[{"no":1,"votes":4163},{"no":2,"votes":67413},{"no":3,"votes":44092}],
+        "districts":{
+          "臺東市":{"name":"臺東市","votes_total":58572,"votes":[{"no":1,"votes":2201},{"no":2,"votes":31473},{"no":3,"votes":24898}],"villages":{}},
+          "成功鎮":{"name":"成功鎮","votes_total":6825,"votes":[{"no":1,"votes":212},{"no":2,"votes":4677},{"no":3,"votes":1936}],"villages":{}},
+          "關山鎮":{"name":"關山鎮","votes_total":4599,"votes":[{"no":1,"votes":173},{"no":2,"votes":2662},{"no":3,"votes":1764}],"villages":{}},
+          "卑南鄉":{"name":"卑南鄉","votes_total":9631,"votes":[{"no":1,"votes":331},{"no":2,"votes":5338},{"no":3,"votes":3962}],"villages":{}},
+          "鹿野鄉":{"name":"鹿野鄉","votes_total":4123,"votes":[{"no":1,"votes":128},{"no":2,"votes":2240},{"no":3,"votes":1755}],"villages":{}},
+          "池上鄉":{"name":"池上鄉","votes_total":4130,"votes":[{"no":1,"votes":149},{"no":2,"votes":2213},{"no":3,"votes":1768}],"villages":{}},
+          "東河鄉":{"name":"東河鄉","votes_total":4142,"votes":[{"no":1,"votes":157},{"no":2,"votes":2664},{"no":3,"votes":1321}],"villages":{}},
+          "長濱鄉":{"name":"長濱鄉","votes_total":3423,"votes":[{"no":1,"votes":106},{"no":2,"votes":2307},{"no":3,"votes":1010}],"villages":{}},
+          "太麻里鄉":{"name":"太麻里鄉","votes_total":6106,"votes":[{"no":1,"votes":196},{"no":2,"votes":3632},{"no":3,"votes":2278}],"villages":{}},
+          "大武鄉":{"name":"大武鄉","votes_total":2858,"votes":[{"no":1,"votes":75},{"no":2,"votes":1928},{"no":3,"votes":855}],"villages":{}},
+          "綠島鄉":{"name":"綠島鄉","votes_total":1765,"votes":[{"no":1,"votes":49},{"no":2,"votes":1189},{"no":3,"votes":527}],"villages":{}},
+          "海端鄉":{"name":"海端鄉","votes_total":1899,"votes":[{"no":1,"votes":63},{"no":2,"votes":1439},{"no":3,"votes":397}],"villages":{}},
+          "延平鄉":{"name":"延平鄉","votes_total":1803,"votes":[{"no":1,"votes":49},{"no":2,"votes":1348},{"no":3,"votes":406}],"villages":{}},
+          "金峰鄉":{"name":"金峰鄉","votes_total":2184,"votes":[{"no":1,"votes":58},{"no":2,"votes":1785},{"no":3,"votes":341}],"villages":{}},
+          "達仁鄉":{"name":"達仁鄉","votes_total":1923,"votes":[{"no":1,"votes":61},{"no":2,"votes":1510},{"no":3,"votes":352}],"villages":{}},
+          "蘭嶼鄉":{"name":"蘭嶼鄉","votes_total":1685,"votes":[{"no":1,"votes":155},{"no":2,"votes":1008},{"no":3,"votes":522}],"villages":{}}
+        }
       },
       "hualian":{
         "id":"hualian",
@@ -177,7 +600,22 @@
         "name": "花蓮縣",
         "map_d":"M297.492 417.941C294.935 416.288 292.823 412.433 292.823 409.459V385.337C292.823 382.253 294.824 378.288 297.159 376.415L319.061 359.343C321.507 357.47 324.175 353.615 324.953 350.641L369.202 201.722C370.091 198.859 373.316 196.435 376.317 196.435H424.124C427.237 196.435 428.905 198.859 428.015 201.722L352.414 447.13C351.525 449.993 348.745 451.095 346.077 449.443L297.492 417.941Z",
         "votes_total":185212,
-        "votes":[{"no":1,"votes":6869},{"no":2,"votes":111834},{"no":3,"votes":66509}]
+        "votes":[{"no":1,"votes":6869},{"no":2,"votes":111834},{"no":3,"votes":66509}],
+        "districts":{
+          "花蓮市":{"name":"花蓮市","votes_total":59571,"votes":[{"no":1,"votes":2403},{"no":2,"votes":33796},{"no":3,"votes":23372}],"villages":{}},
+          "鳳林鎮":{"name":"鳳林鎮","votes_total":6545,"votes":[{"no":1,"votes":221},{"no":2,"votes":4044},{"no":3,"votes":2280}],"villages":{}},
+          "玉里鎮":{"name":"玉里鎮","votes_total":11896,"votes":[{"no":1,"votes":410},{"no":2,"votes":7550},{"no":3,"votes":3936}],"villages":{}},
+          "新城鄉":{"name":"新城鄉","votes_total":11585,"votes":[{"no":1,"votes":451},{"no":2,"votes":7130},{"no":3,"votes":4004}],"villages":{}},
+          "吉安鄉":{"name":"吉安鄉","votes_total":50175,"votes":[{"no":1,"votes":1900},{"no":2,"votes":28957},{"no":3,"votes":19318}],"villages":{}},
+          "壽豐鄉":{"name":"壽豐鄉","votes_total":10522,"votes":[{"no":1,"votes":349},{"no":2,"votes":6333},{"no":3,"votes":3840}],"villages":{}},
+          "光復鄉":{"name":"光復鄉","votes_total":7018,"votes":[{"no":1,"votes":209},{"no":2,"votes":4741},{"no":3,"votes":2068}],"villages":{}},
+          "豐濱鄉":{"name":"豐濱鄉","votes_total":2269,"votes":[{"no":1,"votes":61},{"no":2,"votes":1647},{"no":3,"votes":561}],"villages":{}},
+          "瑞穗鄉":{"name":"瑞穗鄉","votes_total":6065,"votes":[{"no":1,"votes":211},{"no":2,"votes":3856},{"no":3,"votes":1998}],"villages":{}},
+          "富里鄉":{"name":"富里鄉","votes_total":5109,"votes":[{"no":1,"votes":228},{"no":2,"votes":3141},{"no":3,"votes":1740}],"villages":{}},
+          "秀林鄉":{"name":"秀林鄉","votes_total":8350,"votes":[{"no":1,"votes":257},{"no":2,"votes":5938},{"no":3,"votes":2155}],"villages":{}},
+          "萬榮鄉":{"name":"萬榮鄉","votes_total":3209,"votes":[{"no":1,"votes":93},{"no":2,"votes":2410},{"no":3,"votes":706}],"villages":{}},
+          "卓溪鄉":{"name":"卓溪鄉","votes_total":2898,"votes":[{"no":1,"votes":76},{"no":2,"votes":2291},{"no":3,"votes":531}],"villages":{}}
+        }
       },
       "yilan":{
         "id":"yilan",
@@ -185,7 +623,21 @@
         "name": "宜蘭縣",
         "map_d":"M374.654 189.005C371.571 189.005 366.947 187.793 364.415 186.251L361.002 184.268C358.36 182.726 356.268 179.091 356.268 176.007V153.095C356.268 150.011 358.25 146.045 360.562 144.173L386.654 123.244C388.966 121.371 392.93 118.287 395.242 116.304L440.161 80.2841C442.473 78.4115 444.454 79.2927 444.564 82.377L445.335 136.792C445.335 139.766 444.674 144.723 443.794 147.587L432.784 183.828C431.903 186.691 428.711 189.115 425.628 189.115H374.654V189.005Z M510 81.1364C510 86.1693 505.946 90.2871 500.99 90.2871H489.728C484.772 90.2871 480.718 86.1693 480.718 81.1364C480.718 76.1035 484.772 71.9857 489.728 71.9857H500.99C505.946 71.9857 510 76.1035 510 81.1364Z",
         "votes_total":274406,
-        "votes":[{"no":1,"votes":10739},{"no":2,"votes":90010},{"no":3,"votes":173657}]
+        "votes":[{"no":1,"votes":10739},{"no":2,"votes":90010},{"no":3,"votes":173657}],
+        "districts":{
+          "宜蘭市":{"name":"宜蘭市","votes_total":56986,"votes":[{"no":1,"votes":2432},{"no":2,"votes":20740},{"no":3,"votes":33814}],"villages":{}},
+          "羅東鎮":{"name":"羅東鎮","votes_total":41689,"votes":[{"no":1,"votes":1582},{"no":2,"votes":13383},{"no":3,"votes":26724}],"villages":{}},
+          "蘇澳鎮":{"name":"蘇澳鎮","votes_total":23759,"votes":[{"no":1,"votes":952},{"no":2,"votes":7667},{"no":3,"votes":15140}],"villages":{}},
+          "頭城鎮":{"name":"頭城鎮","votes_total":16904,"votes":[{"no":1,"votes":812},{"no":2,"votes":6569},{"no":3,"votes":9523}],"villages":{}},
+          "礁溪鄉":{"name":"礁溪鄉","votes_total":21962,"votes":[{"no":1,"votes":896},{"no":2,"votes":6972},{"no":3,"votes":14094}],"villages":{}},
+          "壯圍鄉":{"name":"壯圍鄉","votes_total":15146,"votes":[{"no":1,"votes":575},{"no":2,"votes":4348},{"no":3,"votes":10223}],"villages":{}},
+          "員山鄉":{"name":"員山鄉","votes_total":19823,"votes":[{"no":1,"votes":726},{"no":2,"votes":5747},{"no":3,"votes":13350}],"villages":{}},
+          "冬山鄉":{"name":"冬山鄉","votes_total":33130,"votes":[{"no":1,"votes":1179},{"no":2,"votes":8630},{"no":3,"votes":23321}],"villages":{}},
+          "五結鄉":{"name":"五結鄉","votes_total":25244,"votes":[{"no":1,"votes":866},{"no":2,"votes":6897},{"no":3,"votes":17481}],"villages":{}},
+          "三星鄉":{"name":"三星鄉","votes_total":13193,"votes":[{"no":1,"votes":515},{"no":2,"votes":3853},{"no":3,"votes":8825}],"villages":{}},
+          "大同鄉":{"name":"大同鄉","votes_total":3388,"votes":[{"no":1,"votes":128},{"no":2,"votes":2568},{"no":3,"votes":692}],"villages":{}},
+          "南澳鄉":{"name":"南澳鄉","votes_total":3182,"votes":[{"no":1,"votes":76},{"no":2,"votes":2636},{"no":3,"votes":470}],"villages":{}}
+        }
       },
       "nantou":{
         "id":"nantou",
@@ -193,7 +645,22 @@
         "name": "南投縣",
         "map_d":"M282.845 374.569C279.734 374.569 275.066 373.469 272.399 372.039L226.947 348.717C224.28 347.287 222.058 343.656 222.058 340.686V270.279C222.058 267.199 224.391 264.009 227.392 263.128L351.079 224.735C353.968 223.855 355.635 225.505 354.857 228.365L319.74 346.407C318.851 349.267 316.184 353.227 313.85 355.098L293.18 371.159C290.736 373.029 286.29 374.569 283.29 374.569H282.845Z",
         "votes_total":299152,
-        "votes":[{"no":1,"votes":13315},{"no":2,"votes":133791},{"no":3,"votes":152046}]
+        "votes":[{"no":1,"votes":13315},{"no":2,"votes":133791},{"no":3,"votes":152046}],
+        "districts":{
+          "南投市":{"name":"南投市","votes_total":60677,"votes":[{"no":1,"votes":3077},{"no":2,"votes":26690},{"no":3,"votes":30910}],"villages":{}},
+          "埔里鎮":{"name":"埔里鎮","votes_total":47795,"votes":[{"no":1,"votes":2070},{"no":2,"votes":22664},{"no":3,"votes":23061}],"villages":{}},
+          "草屯鎮":{"name":"草屯鎮","votes_total":60743,"votes":[{"no":1,"votes":2972},{"no":2,"votes":24975},{"no":3,"votes":32796}],"villages":{}},
+          "竹山鎮":{"name":"竹山鎮","votes_total":32236,"votes":[{"no":1,"votes":1175},{"no":2,"votes":13326},{"no":3,"votes":17735}],"villages":{}},
+          "集集鎮":{"name":"集集鎮","votes_total":6641,"votes":[{"no":1,"votes":301},{"no":2,"votes":2975},{"no":3,"votes":3365}],"villages":{}},
+          "名間鄉":{"name":"名間鄉","votes_total":23425,"votes":[{"no":1,"votes":973},{"no":2,"votes":8306},{"no":3,"votes":14146}],"villages":{}},
+          "鹿谷鄉":{"name":"鹿谷鄉","votes_total":11092,"votes":[{"no":1,"votes":414},{"no":2,"votes":5179},{"no":3,"votes":5499}],"villages":{}},
+          "中寮鄉":{"name":"中寮鄉","votes_total":9005,"votes":[{"no":1,"votes":396},{"no":2,"votes":3760},{"no":3,"votes":4849}],"villages":{}},
+          "魚池鄉":{"name":"魚池鄉","votes_total":9398,"votes":[{"no":1,"votes":397},{"no":2,"votes":4154},{"no":3,"votes":4847}],"villages":{}},
+          "國姓鄉":{"name":"國姓鄉","votes_total":11174,"votes":[{"no":1,"votes":499},{"no":2,"votes":5459},{"no":3,"votes":5216}],"villages":{}},
+          "水里鄉":{"name":"水里鄉","votes_total":10292,"votes":[{"no":1,"votes":441},{"no":2,"votes":4810},{"no":3,"votes":5041}],"villages":{}},
+          "信義鄉":{"name":"信義鄉","votes_total":8462,"votes":[{"no":1,"votes":320},{"no":2,"votes":5246},{"no":3,"votes":2896}],"villages":{}},
+          "仁愛鄉":{"name":"仁愛鄉","votes_total":8212,"votes":[{"no":1,"votes":280},{"no":2,"votes":6247},{"no":3,"votes":1685}],"villages":{}}
+        }
       },
       "penghu":{
         "id":"penghu",
@@ -201,7 +668,15 @@
         "name": "澎湖縣",
         "map_d":"M53.2562 445.308C54.3543 447.749 53.3782 450.677 50.938 451.775L32.1486 460.682C29.7084 461.78 26.7801 460.804 25.6821 458.364L22.0218 450.677C20.9237 448.237 21.8998 445.309 24.34 444.21L43.1294 435.304C45.5696 434.206 48.4978 435.182 49.5959 437.622L53.2562 445.308Z M14.5793 444.698C13.4812 447.139 10.553 448.237 8.1128 447.139L7.74677 447.017C5.30658 445.919 4.20849 442.99 5.30658 440.55L10.431 429.447C11.5291 427.007 14.4573 425.909 16.8975 427.007L17.2635 427.129C19.7037 428.227 20.8018 431.155 19.7037 433.596L14.5793 444.698Z M39.8351 425.055C41.2993 427.251 40.9332 430.179 38.8591 431.399C36.7849 432.62 34.1007 431.887 32.6366 429.569L29.9524 425.421C28.4882 423.225 28.8543 420.297 30.9284 419.076C32.8806 417.856 35.6868 418.588 37.1509 420.907L39.8351 425.055Z",
         "votes_total":50904,
-        "votes":[{"no":1,"votes":14021},{"no":2,"votes":179353},{"no":3,"votes":317676}]
+        "votes":[{"no":1,"votes":14021},{"no":2,"votes":179353},{"no":3,"votes":317676}],
+        "districts":{
+          "馬公市":{"name":"馬公市","votes_total":32539,"votes":[{"no":1,"votes":1664},{"no":2,"votes":13672},{"no":3,"votes":17203}],"villages":{}},
+          "湖西鄉":{"name":"湖西鄉","votes_total":7531,"votes":[{"no":1,"votes":394},{"no":2,"votes":2636},{"no":3,"votes":4501}],"villages":{}},
+          "白沙鄉":{"name":"白沙鄉","votes_total":4306,"votes":[{"no":1,"votes":169},{"no":2,"votes":1896},{"no":3,"votes":2241}],"villages":{}},
+          "西嶼鄉":{"name":"西嶼鄉","votes_total":3772,"votes":[{"no":1,"votes":177},{"no":2,"votes":1555},{"no":3,"votes":2040}],"villages":{}},
+          "望安鄉":{"name":"望安鄉","votes_total":1559,"votes":[{"no":1,"votes":89},{"no":2,"votes":542},{"no":3,"votes":928}],"villages":{}},
+          "七美鄉":{"name":"七美鄉","votes_total":1197,"votes":[{"no":1,"votes":90},{"no":2,"votes":610},{"no":3,"votes":497}],"villages":{}}
+        }
       },
       "kinmen":{
         "id":"kinmen",
@@ -209,7 +684,15 @@
         "name": "金門縣",
         "map_d":"M32.9426 193.995C30.2584 193.995 28.0622 195.703 28.0622 197.9C28.0622 200.096 26.11 202.78 23.6699 203.878L21.4737 204.854C19.0335 205.952 17.0813 205.342 17.0813 203.512C17.0813 201.682 14.8852 200.096 12.201 200.096H4.88038C2.19617 200.096 0 202.292 0 204.976V224.498C0 227.182 2.19617 229.378 4.88038 229.378H12.201C14.8852 229.378 17.0813 227.182 17.0813 224.498V224.01C17.0813 221.325 19.0335 218.153 21.4737 217.055L23.6699 216.079C26.11 214.981 28.0622 216.201 28.0622 218.885V219.739C28.0622 222.423 30.2584 224.62 32.9426 224.62H40.2632C42.9474 224.62 45.1435 222.423 45.1435 219.739V198.998C45.1435 196.313 42.9474 194.117 40.2632 194.117H32.9426V193.995Z",
         "votes_total":48040,
-        "votes":[{"no":1,"votes":1636},{"no":2,"votes":35948},{"no":3,"votes":10456}]
+        "votes":[{"no":1,"votes":1636},{"no":2,"votes":35948},{"no":3,"votes":10456}],
+        "districts":{
+          "金城鎮":{"name":"金城鎮","votes_total":15167,"votes":[{"no":1,"votes":505},{"no":2,"votes":11492},{"no":3,"votes":3170}],"villages":{}},
+          "金沙鎮":{"name":"金沙鎮","votes_total":7119,"votes":[{"no":1,"votes":185},{"no":2,"votes":5736},{"no":3,"votes":1198}],"villages":{}},
+          "金湖鎮":{"name":"金湖鎮","votes_total":10810,"votes":[{"no":1,"votes":415},{"no":2,"votes":8121},{"no":3,"votes":2274}],"villages":{}},
+          "金寧鄉":{"name":"金寧鄉","votes_total":11133,"votes":[{"no":1,"votes":437},{"no":2,"votes":7535},{"no":3,"votes":3161}],"villages":{}},
+          "烈嶼鄉":{"name":"烈嶼鄉","votes_total":3698,"votes":[{"no":1,"votes":92},{"no":2,"votes":2968},{"no":3,"votes":638}],"villages":{}},
+          "烏坵鄉":{"name":"烏坵鄉","votes_total":113,"votes":[{"no":1,"votes":2},{"no":2,"votes":96},{"no":3,"votes":15}],"villages":{}}
+        }
       },
       "matsu":{
         "id":"matsu",
@@ -221,15 +704,16 @@
         "districts": {
           "南竿鄉": {
             "name":"南竿鄉",
-            "votes_total":125561,
+            "votes_total":3773,
             "votes": [{"no":1,"votes":114},{"no":2,"votes":2875},{"no":3,"votes":784}],
             "villages": {
               "介壽村":{"name":"介壽村","votes_total":1202,"votes":[{"no":1,"votes":40},{"no":2,"votes":915},{"no":3,"votes":247}]},
               "復興村、福沃村":{"name":"復興村、福沃村","votes_total":988, "votes":[{"no":1,"votes":27},{"no":2,"votes":765},{"no":3,"votes":196}]}
             }
-          }
-
-
+          },
+          "北竿鄉":{"name":"北竿鄉","votes_total":1109,"votes":[{"no":1,"votes":25},{"no":2,"votes":883},{"no":3,"votes":201}],"villages":{}},
+          "莒光鄉":{"name":"莒光鄉","votes_total":632,"votes":[{"no":1,"votes":14},{"no":2,"votes":513},{"no":3,"votes":105}],"villages":{}},
+          "東引鄉":{"name":"東引鄉","votes_total":676,"votes":[{"no":1,"votes":35},{"no":2,"votes":505},{"no":3,"votes":136}],"villages":{}}
         }
       }
     }

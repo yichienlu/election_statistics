@@ -44,12 +44,19 @@ const selectCounty = (county) => {
     <svg viewBox="0 0 510 700" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path v-for="item in map_arr" 
       :key="item" class="area" :id="item.id" :value="item.id" @click="selectCounty(item.id)"
-      :class="{'DPP':item.party=='DPP', 'KMT':item.party=='KMT','PFP':item.party=='PFP', 'high':item.percentage>62, 'mid':item.percentage>55 && item.percentage <62, 'low':item.percentage<55 }" :d="item.map_d" title="test" />
+      :class="{
+        'DPP':item.party=='DPP', 'KMT':item.party=='KMT','PFP':item.party=='PFP', 
+        'high':item.percentage>62, 'mid':item.percentage>55 && item.percentage <62, 'low':item.percentage<55 ,
+        'selected':item.id==areaStore.selectedCounty
+      }" :d="item.map_d" />
     </svg>
   </div>
 </template>
 
 <style lang="scss" scoped>
+path{
+  cursor: pointer;
+}
 .area {
   &.DPP{
     &.low {fill: #a4e4b6; &:hover{fill:#84cb98;} &:active{fill: #77b789;}}
@@ -69,6 +76,10 @@ const selectCounty = (county) => {
   }
 }
 
+.selected {
+  stroke-width: 4;
+  stroke: #262E49
+}
 
 
 </style>
