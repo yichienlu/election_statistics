@@ -13,7 +13,6 @@ const areaStore = useAreaStore()
 
 import data from '@/db.json/'
 areaStore.data = data
-// console.log(data)
   areaStore.countiesList = ref(Object.values(data['2020'].counties))
 
   const openResult = ref(false)
@@ -36,7 +35,6 @@ areaStore.data = data
   })
 
   const clearSelection = () => {
-    console.log("click!")
     areaStore.selectedCounty = ''
     areaStore.selectedDistrict = ''
     areaStore.selectedVillage = ''

@@ -7,7 +7,6 @@ map_arr.map((item, index)=>{
   item.votes.sort((a,b)=>b.votes-a.votes)
   map_arr[index].party = areaStore.data['2020'].candidates[item.votes[0].no - 1].party
   map_arr[index].percentage = (item.votes[0].votes / item.votes_total*100).toFixed(2)
-  console.log(item.id, map_arr[index].party, map_arr[index].percentage)
 })
 
 const party_color = {
