@@ -23,7 +23,7 @@ const candidates = ref(areaStore.data?.['2020'].candidates)
         </td>
         <td class="pl-5 mb-3">
           <div class="font-bold">{{ (item.votes / areaStore.data['2020'].counties[areaStore.selectedCounty].districts[areaStore.selectedDistrict].votes_total * 100).toFixed(1) }} %</div>
-          <div class="text-[12px] mb-3">{{item.votes}} 票</div>
+          <div class="text-[12px] mb-3">{{item.votes.toLocaleString("en-US")}} 票</div>
         </td>
       </tr>                
     </table>

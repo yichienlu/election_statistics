@@ -34,7 +34,7 @@ data_national.value.map((item,index)=>{
         </td>
         <td class="pl-5 mb-3">
           <div class="font-bold">{{ (item.votes / areaStore.data['2020'].votes_valid * 100).toFixed(1) }} %</div>
-          <div class="text-[12px] mb-3">{{item.votes}} 票</div>
+          <div class="text-[12px] mb-3">{{item.votes.toLocaleString("en-US")}} 票</div>
         </td>
       </tr>                
     </table>

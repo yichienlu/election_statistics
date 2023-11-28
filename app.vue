@@ -53,7 +53,7 @@ areaStore.data = data
       <button class=" py-3 text-[#BFBFBF] whitespace-nowrap">第10任 立法委員選舉</button>
     </div> 
     <div class="sticky top-6 lg:relative container mx-auto px-6 flex mb-5 sm:mb-10 z-20">
-      <div class="grow grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-2">
+      <div class="grow lg:grow-0 grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-2">
         <Options />
       </div>
       <button class="block w-9 sm:w-auto h-[76px] sm:h-9 rounded-lg text-2xl sm:text-base bg-primary hover:bg-primaryHover active:bg-primaryActive text-white py-1 sm:px-3 ml-2" @click="clearSelection">
@@ -87,13 +87,13 @@ areaStore.data = data
               </div>
               <ul>
                 <li class="mb-2">投票數
-                  <span class="font-bold ms-2">{{ areaStore.data['2020'].votes_valid }} 票</span>
+                  <span class="font-bold ms-2">{{ areaStore.data['2020'].votes_valid.toLocaleString("en-US") }} 票</span>
                 </li>
                 <li class="mb-2">無效票數
-                  <span class="font-bold ms-2">{{ areaStore.data['2020'].votes_invalid }} 票</span>
+                  <span class="font-bold ms-2">{{ areaStore.data['2020'].votes_invalid.toLocaleString("en-US") }} 票</span>
                 </li>
                 <li>有效票數
-                  <span class="font-bold ms-2">{{ areaStore.data['2020'].votes_total }} 票</span>
+                  <span class="font-bold ms-2">{{ areaStore.data['2020'].votes_total.toLocaleString("en-US") }} 票</span>
                 </li>
               </ul>
             </div>
