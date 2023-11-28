@@ -52,7 +52,7 @@ areaStore.data = data
       <button class=" py-3 border-b-4 border-primary whitespace-nowrap">第15任 總統副總統大選</button>
       <button class=" py-3 text-[#BFBFBF] whitespace-nowrap">第10任 立法委員選舉</button>
     </div> 
-    <div class="sticky top-6 lg:relative container mx-auto px-6 flex mb-5 sm:mb-10">
+    <div class="sticky top-6 lg:relative container mx-auto px-6 flex mb-5 sm:mb-10 z-20">
       <div class="grow grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-2">
         <Options />
       </div>
@@ -73,7 +73,7 @@ areaStore.data = data
             </span>
           </button>
           <div class="duration-200 overflow-hidden" :class="{'h-0 lg:h-auto':!openResult}">
-            <div  class="block xs:flex lg:block items-center mt-5 mb-10"> 
+            <div  class="block sm:flex lg:block items-center mt-5 mb-10"> 
               <div class="flex items-center">
                 <div class="mr-3 lg:mb-5">
                   <ClientOnly>
@@ -97,7 +97,7 @@ areaStore.data = data
                 </li>
               </ul>
             </div>
-            <div  class="xs:flex lg:block items-center mt-5">
+            <div  class="sm:flex lg:block items-center mt-5">
               <ClientOnly>
                 <!-- <voteShareChart /> -->
                 <voteShareDonut class="lg:mb-5" />
