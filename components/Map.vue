@@ -2,34 +2,64 @@
 import { useAreaStore } from '@/stores/selectArea'
 const areaStore = useAreaStore()
 
-const map_arr = JSON.parse(JSON.stringify(Object.values(areaStore.data['2020'].counties)))
-map_arr.map((item, index)=>{
-  item.votes.sort((a,b)=>b.votes-a.votes)
-  map_arr[index].party = areaStore.data['2020'].candidates[item.votes[0].no - 1].party
-  map_arr[index].percentage = (item.votes[0].votes / item.votes_total*100).toFixed(2)
+const map_arr = ref({})
+
+onMounted(()=>{
+  map_arr.value = JSON.parse(JSON.stringify(Object.keys(areaStore.data.counties)))
+
+  map_arr.value.map((area, i)=>{
+    const {districts, ...obj} = areaStore.data.counties[area]
+    map_arr.value[i] = JSON.parse(JSON.stringify(obj))
+    map_arr.value[i].votes.map((item, j)=>{
+      let object = {
+        candidate:areaStore.data.candidates[j],
+        vote: item,
+        percentage: item/map_arr.value[i].votes_total
+      }
+      map_arr.value[i].votes[j] = object
+    })
+    map_arr.value[i].votes.sort((a,b)=>b.vote-a.vote)
+    map_arr.value[i].map_d = areaStore.data.map[area]
+  })
 })
 
-const party_color = {
-    DPP:{normal:"#84CB98",light:"#edf7f0"},
-    KMT:{normal:"#8894D8",light:"#dadef3"},
-    PFP:{normal:"#DFA175",light:"#f5e2d4"},
-  }
+
+
 const selectCounty = (county) => {
+  // console.log( areaStore.selectedCounty, county)
   areaStore.villagesList = []
   areaStore.selectedDistrict = ''
   areaStore.selectedVillage = ''
   areaStore.selectedCounty = county
+
   areaStore.data_district = {}
   areaStore.data_village = {}
-  areaStore.districtsList = Object.values(areaStore.data['2020'].counties[county].districts)
+  areaStore.districtsList = Object.keys(areaStore.data.counties[county].districts)
 
-  let arr = JSON.parse(JSON.stringify(areaStore.data['2020'].counties[areaStore.selectedCounty].votes))
-  arr.sort((a,b)=>b.votes-a.votes)
-  areaStore.data_county = arr
-  areaStore.data_county.map((item,index)=>{
-    let party = areaStore.data['2020'].candidates[item.no -1].party
-    areaStore.data_county[index].color = party_color[party]
+
+
+  let arr = JSON.parse(JSON.stringify(areaStore.data.counties[county].votes))
+  arr.map((item,index)=>{
+    let obj = {
+      candidate:areaStore.data.candidates[index],
+      votes:item,
+    }
+    arr[index] = obj
   })
+  arr.sort((a,b)=>b.votes-a.votes)
+  areaStore.data_county.value = arr
+
+
+
+  console.log(arr)
+
+
+  // arr.sort((a,b)=>b.votes-a.votes)
+  // areaStore.data_county = arr
+  // areaStore.data_county.map((item,index)=>{
+  //   let party = areaStore.data.candidates[item.no -1].party
+  //   areaStore.data_county[index].color = party_color[party]
+  // })
 
 }
 
@@ -41,13 +71,20 @@ const selectCounty = (county) => {
 <template>
   <div class="container mx-auto px-6">
     <svg viewBox="0 0 510 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path v-for="item in map_arr" 
-      :key="item" class="area" :id="item.id" :value="item.id" @click="selectCounty(item.id)"
+      <path v-for="item in map_arr" @click="selectCounty(item.id)"
+      :key="item" class="area" :id="item.id"
       :class="{
-        'DPP':item.party=='DPP', 'KMT':item.party=='KMT','PFP':item.party=='PFP', 
-        'high':item.percentage>62, 'mid':item.percentage>55 && item.percentage <62, 'low':item.percentage<55 ,
+        'DPP':item.votes[0].candidate.party=='DPP', 
+        'KMT':item.votes[0].candidate.party=='KMT',
+        'PFP':item.votes[0].candidate.party=='PFP', 
+
+        'high':item.votes[0].percentage>0.62, 
+        'mid':item.votes[0].percentage>0.55 && item.votes[0].percentage <0.62, 
+        'low':item.votes[0].percentage<0.55 ,
+
         'selected':item.id==areaStore.selectedCounty
-      }" :d="item.map_d" />
+      }" 
+      :d="item.map_d" />
     </svg>
   </div>
 </template>

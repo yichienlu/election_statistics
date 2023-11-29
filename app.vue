@@ -1,19 +1,28 @@
 <script setup>
 // https://www.figma.com/file/Caoi6yMxwbeKMneS5tsCt6/2020%E7%B8%BD%E7%B5%B1%E9%81%B8%E8%88%89%E5%8D%B3%E6%99%82%E9%96%8B%E7%A5%A8%E5%9C%B0%E5%9C%96?node-id=66%3A3067&mode=dev
 
-// Todo：
-// - 圓餅圖 data
-// - 選單樣式
-// - 地圖顏色
-// - result color
-// - map select options
-
 import { useAreaStore } from '@/stores/selectArea'
 const areaStore = useAreaStore()
 
-import data from '@/db.json/'
+import data from '@/db2.json/'
+
 areaStore.data = data
-  areaStore.countiesList = ref(Object.values(data['2020'].counties))
+
+
+const party_color = ref({
+    DPP:{normal:"#84CB98",light:"#edf7f0"},
+    KMT:{normal:"#8894D8",light:"#dadef3"},
+    PFP:{normal:"#DFA175",light:"#f5e2d4"},
+  })
+
+areaStore.data.candidates.map((item,index)=>{
+  areaStore.data.candidates[index].party_color = party_color.value[areaStore.data.candidates[index].party]
+})
+
+
+areaStore.countiesList = ref(Object.values(data.counties))
+
+
 
   const openResult = ref(false)
   const toggleResult = () => {
@@ -43,7 +52,10 @@ areaStore.data = data
 <template>
   <div class="bg-[#F5F5F5] min-h-[100vh]">
     <h1 class="bg-primary text-white">
-      <div class="container mx-auto px-6 pt-7 pb-4 sm:pt-4 text-xl sm:text-3xl font-bold">2020 開票地圖</div>
+      <div class="container mx-auto px-6 pt-7 pb-4 sm:pt-4 text-xl sm:text-3xl font-bold">2020 開票地圖
+
+        {{ areaStore.selectedCounty }}
+      </div>
     </h1>
 
     <div class="container mx-auto px-6 flex gap-5 pt-5 sm:pt-8 mb-5 font-bold sm:text-xl overflow-hidden">
@@ -79,19 +91,19 @@ areaStore.data = data
                   </ClientOnly>
                 </div>
                 <div class="text-center mr-3">
-                  <div class="font-bold">{{areaStore.data['2020'].vote_rate.toFixed(2)}}%</div>
+                  <div class="font-bold">{{areaStore.data.vote_rate.toFixed(2)}}%</div>
                   <div class="text-[12px]">投票率</div>
                 </div>
               </div>
               <ul>
                 <li class="mb-2">投票數
-                  <span class="font-bold ms-2">{{ areaStore.data['2020'].votes_valid.toLocaleString("en-US") }} 票</span>
+                  <span class="font-bold ms-2">{{ areaStore.data.votes_valid.toLocaleString("en-US") }} 票</span>
                 </li>
                 <li class="mb-2">無效票數
-                  <span class="font-bold ms-2">{{ areaStore.data['2020'].votes_invalid.toLocaleString("en-US") }} 票</span>
+                  <span class="font-bold ms-2">{{ areaStore.data.votes_invalid.toLocaleString("en-US") }} 票</span>
                 </li>
                 <li>有效票數
-                  <span class="font-bold ms-2">{{ areaStore.data['2020'].votes_total.toLocaleString("en-US") }} 票</span>
+                  <span class="font-bold ms-2">{{ areaStore.data.votes_total.toLocaleString("en-US") }} 票</span>
                 </li>
               </ul>
             </div>
@@ -131,10 +143,10 @@ areaStore.data = data
       <Tips v-if="areaStore.selectedCounty == ''&& areaStore.selectedDistrict =='' && areaStore.selectedVillage == ''" class="container mx-auto lg:mx-0 px-6 lg:w-auto" />
       <div v-else class="hidden mx-auto lg:mx-0 lg:w-auto px-6 ms-5 lg:block">
         <ResultTableCounty v-if="areaStore.selectedCounty" />
-        <ResultTableDistrict  v-if="areaStore.selectedDistrict" />
+        <ResultTableDistrict v-if="areaStore.selectedDistrict" />
         <ResultTableVillage v-if="areaStore.selectedVillage" />
-
       </div>
+
     </div>
   </div>
 </template>

@@ -14,12 +14,12 @@ const village_select = ref(null)
   </select>
   <select name="" id="district_select" ref="district_select" @change="areaStore.selectDistrict" class="lg:w-[156px] rounded-lg border border-[#E6E6E6] px-3 py-1" :value="areaStore.selectedDistrict">
     <option value="" selected disabled>請選擇鄉鎮</option>
-    <option :value="item.name" v-for="item in areaStore.districtsList" :key="item">{{item.name}}</option>
+    <option :value="item.name" v-for="item in areaStore.districtsList" :key="item">{{item}}</option>
 
   </select>
   <select name="" id="village_select" ref="village_select" @change="areaStore.selectVillage" class="lg:w-[156px] rounded-lg border border-[#E6E6E6] px-3 py-1" :value="areaStore.selectedVillage">
     <option value="" selected disabled>請選擇村里</option>
-    <option :value="item.name" v-for="item in areaStore.villagesList" :key="item">{{item.name}}</option>
+    <option :value="item.name" v-for="item in areaStore.villagesList" :key="item">{{item}}</option>
 
   </select>
 </template>
