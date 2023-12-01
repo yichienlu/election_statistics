@@ -24,54 +24,11 @@ onMounted(()=>{
 })
 
 
-
-const selectCounty = (county) => {
-  // console.log( areaStore.selectedCounty, county)
-  areaStore.villagesList = []
-  areaStore.selectedDistrict = ''
-  areaStore.selectedVillage = ''
-  areaStore.selectedCounty = county
-
-  areaStore.data_district = {}
-  areaStore.data_village = {}
-  areaStore.districtsList = Object.keys(areaStore.data.counties[county].districts)
-
-
-
-  let arr = JSON.parse(JSON.stringify(areaStore.data.counties[county].votes))
-  arr.map((item,index)=>{
-    let obj = {
-      candidate:areaStore.data.candidates[index],
-      votes:item,
-    }
-    arr[index] = obj
-  })
-  arr.sort((a,b)=>b.votes-a.votes)
-  areaStore.data_county.value = arr
-
-
-
-  console.log(arr)
-
-
-  // arr.sort((a,b)=>b.votes-a.votes)
-  // areaStore.data_county = arr
-  // areaStore.data_county.map((item,index)=>{
-  //   let party = areaStore.data.candidates[item.no -1].party
-  //   areaStore.data_county[index].color = party_color[party]
-  // })
-
-}
-
-
-
-
-
 </script>
 <template>
   <div class="container mx-auto px-6">
     <svg viewBox="0 0 510 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path v-for="item in map_arr" @click="selectCounty(item.id)"
+      <path v-for="item in map_arr" @click="areaStore.selectCounty(item.id)"
       :key="item" class="area" :id="item.id"
       :class="{
         'DPP':item.votes[0].candidate.party=='DPP', 

@@ -6,9 +6,13 @@ const county_select = ref(null)
 const district_select = ref(null)
 const village_select = ref(null)
 
+const selectCounty = (e) => {
+  areaStore.selectCounty(e.target.value)
+}
+
 </script>
 <template>
-  <select name="" id="county_select" ref="county_select" @change="areaStore.selectCounty" class="col-span-2 sm:col-span-1 lg:w-[156px] rounded-lg border border-[#E6E6E6] px-3 py-1" :value="areaStore.selectedCounty">
+  <select name="" id="county_select" ref="county_select" @change="selectCounty" class="col-span-2 sm:col-span-1 lg:w-[156px] rounded-lg border border-[#E6E6E6] px-3 py-1" :value="areaStore.selectedCounty">
     <option value="" selected disabled>請選擇縣市</option>
     <option :value="item.id" v-for="item in areaStore.countiesList" :key="item">{{item.name}}</option>
   </select>

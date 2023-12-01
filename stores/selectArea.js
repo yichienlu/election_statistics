@@ -28,15 +28,15 @@ export const useAreaStore = defineStore('area', ()=>{
     data_national.value = arr
   }
 
-  const selectCounty = (e) => {
+  const selectCounty = (county) => {
     villagesList.value = []
     selectedDistrict.value = ''
     selectedVillage.value = ''
-    selectedCounty.value = e.target.value
+    selectedCounty.value = county
     data_district.value = {}
     data_village.value = {}
   
-    districtsList.value = Object.keys(data.value.counties[e.target.value].districts)
+    districtsList.value = Object.keys(data.value.counties[county].districts)
 
     let arr = JSON.parse(JSON.stringify(data.value.counties[selectedCounty.value].votes))
     arr.map((item,index)=>{

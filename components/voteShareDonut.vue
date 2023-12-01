@@ -1,62 +1,63 @@
 <script setup>
-// import { useAreaStore } from '@/stores/selectArea'
-// const areaStore = useAreaStore()
+import { useAreaStore } from '@/stores/selectArea'
+const areaStore = useAreaStore()
 
-// const { $eChart } = useNuxtApp()
-// const voteShareChart = ref(null)
-
-
-// const party_color = {
-//   "DPP":"#84CB98",
-//   "KMT":"#8894D8",
-//   "PFP":"#DFA175"
-// }
-// onMounted(()=>{
-//   let data = JSON.parse(JSON.stringify(areaStore.data.votes.sort((a,b)=>b.votes - a.votes)))
-//   data.map((item, index)=>{
-//     data[index]= {value: item.votes, name:item.no}
-//   })
-
-//   let color = []
-//   data.map((item, index)=>{
-//     let party = areaStore.data.candidates[item.name-1].party
-//     color[index] = party_color[party]
-//   })
+const { $eChart } = useNuxtApp()
+const voteShareChart = ref(null)
 
 
-//   const myChart = $eChart.init(voteShareChart.value)
-//   const option = {
-//   tooltip: {
-//     show: false,
-//   },
-//   legend: {
-//     show: false,
-//   },
-//   series: [
-//     {
-//       type: 'pie',
-//       radius: ['50%', '100%'],
-//       color: color,
-//       label: {
-//         show: false,
-//       },
-//       emphasis: {
-//         label: {
-//           show: false,
-//         },
-//         scale: false
-//       },
-//       labelLine: {
-//         show: false
-//       },
-//       data:  data
-//     }
-//   ]
-// };
+const party_color = {
+  "DPP":"#84CB98",
+  "KMT":"#8894D8",
+  "PFP":"#DFA175"
+}
+onMounted(()=>{
+  let data_national = JSON.parse(JSON.stringify(areaStore.data_national))
+  
+  let data = []
+  data_national.map((item, index)=>{
+    data[index]= {value: item.votes, name:item.candidate.party}
+  })
 
 
-// myChart.setOption(option)
-// })
+  let color = []
+  data_national.map((item, index)=>{
+    color[index] = item.candidate.party_color.normal
+  })
+
+  const myChart = $eChart.init(voteShareChart.value)
+  const option = {
+  tooltip: {
+    show: false,
+  },
+  legend: {
+    show: false,
+  },
+  series: [
+    {
+      type: 'pie',
+      radius: ['50%', '100%'],
+      color: color,
+      label: {
+        show: false,
+      },
+      emphasis: {
+        label: {
+          show: false,
+        },
+        scale: false
+      },
+      labelLine: {
+        show: false
+      },
+      data:  data
+    }
+  ]
+};
+
+
+myChart.setOption(option)
+})
 
 </script>
 <template>
