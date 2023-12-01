@@ -42,7 +42,7 @@ export const useAreaStore = defineStore('area', ()=>{
     arr.map((item,index)=>{
       let obj = {
         candidate:data.value.candidates[index],
-        votes:item,
+        votes:item
       }
       arr[index] = obj
     })
@@ -60,10 +60,12 @@ export const useAreaStore = defineStore('area', ()=>{
     selectedDistrict.value = e.target.value
 
     let arr = JSON.parse(JSON.stringify(data.value.counties[selectedCounty.value].districts[selectedDistrict.value].votes))
+    const votes_total = arr.reduce((a,c)=>a+c)
     arr.map((item,index)=>{
       let obj = {
         candidate:data.value.candidates[index],
         votes:item,
+        votes_total
       }
       arr[index] = obj
     })
@@ -75,11 +77,12 @@ export const useAreaStore = defineStore('area', ()=>{
     selectedVillage.value = e.target.value
   
     let arr = JSON.parse(JSON.stringify(data.value.counties[selectedCounty.value].districts[selectedDistrict.value].villages[selectedVillage.value]))
-
+    const votes_total = arr.reduce((a,c)=>a+c)
     arr.map((item,index)=>{
       let obj = {
         candidate:data.value.candidates[index],
         votes:item,
+        votes_total
       }
       arr[index] = obj
     })

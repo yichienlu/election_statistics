@@ -2,12 +2,6 @@
 import { useAreaStore } from '@/stores/selectArea'
 const areaStore = useAreaStore()
 
-const votes_total = ref(0)
-
-onMounted(()=>{
-  let votes = areaStore.data.counties[areaStore.selectedCounty].districts[areaStore.selectedDistrict].votes
-  votes_total.value = votes.reduce((a,c)=>a+c,0)
-})
 </script>
 
 <template>
@@ -25,7 +19,7 @@ onMounted(()=>{
           </div>
         </td>
         <td class="pl-5 mb-3">
-          <div class="font-bold">{{ (item.votes/ votes_total * 100).toFixed(1) }} %</div>
+          <div class="font-bold">{{ (item.votes/ item.votes_total * 100).toFixed(1) }} %</div>
           <div class="text-[12px] mb-3">{{item.votes.toLocaleString("en-US") }} 票</div>
         </td>
       </tr>                
